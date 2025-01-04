@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/sign1"
-    tools:context=".MainActivity">
+    tools:context="com.example.feelsync.SignUpActivity">
+
 
     <TextView
         android:id="@+id/signuptitle"
@@ -92,6 +93,14 @@
         android:backgroundTint="#796c63"
         android:text="REGISTER"
         android:textColor="#90ffffff" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="19dp"
+        android:layout_height="14dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-385dp"
+        android:visibility="gone" />
 
 
 </RelativeLayout>

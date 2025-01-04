@@ -15,7 +15,7 @@
 
         <!-- Main Activity -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.feelsync.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,12 +25,17 @@
 
         <!-- Sign Up Activity -->
         <activity
-            android:name=".SignUpActivity"
+            android:name="com.example.feelsync.SignUpActivity"
             android:exported="true" />
 
         <!-- Log In Activity -->
         <activity
-            android:name=".LoginActivity"
+            android:name="com.example.feelsync.LoginActivity"
+            android:exported="true" />
+
+        <!-- Log Out Activity -->
+        <activity
+            android:name="com.example.feelsync.LogOutActivity"
             android:exported="true" />
 
     </application>

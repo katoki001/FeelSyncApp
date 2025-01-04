@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/sign1"
-    tools:context=".MainActivity">
+    tools:context="com.example.feelsync.MainActivity">
 
     <TextView
         android:id="@+id/title"
@@ -42,6 +42,18 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="#796c63"
         android:text="Sign in"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/logOutbtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#796c63"
+        android:text="Log out"
         android:textColor="#ffffff"
         android:textSize="20dp" />
 
