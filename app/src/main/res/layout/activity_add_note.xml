@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/sign1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date and Time"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"
+        android:focusable="false"
+        android:drawableEnd="@drawable/ic_calendar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emotion Color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <!-- Color Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <View
+            android:id="@+id/color_happy"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#DA983C"
+            android:layout_marginEnd="8dp" />
+
+        <View
+            android:id="@+id/color_angry"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#990F02"
+            android:layout_marginEnd="8dp" />
+
+        <View
+            android:id="@+id/color_sad"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#1C2E4A"
+            android:layout_marginEnd="8dp" />
+
+        <View
+            android:id="@+id/color_calm"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#477023"
+            android:layout_marginEnd="8dp"/>
+
+        <View
+            android:id="@+id/color_love"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#EB7096" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/note_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your note here" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Picture"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:backgroundTint="@color/dark_brown"
+        android:layout_marginTop="8dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:backgroundTint="@color/dark_brown"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp" />
+</LinearLayout>
