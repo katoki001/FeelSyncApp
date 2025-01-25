@@ -18,6 +18,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -25,6 +27,7 @@ public class SignUpActivity extends AppCompatActivity {
     private Button registerButton;
     private ProgressBar progressBar;
     private FirebaseAuth mAuth;
+    private DatabaseReference databaseUsers;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -40,8 +43,9 @@ public class SignUpActivity extends AppCompatActivity {
         registerButton = findViewById(R.id.signupbtn);
         progressBar = findViewById(R.id.progressBar);
 
-        // Initialize FirebaseAuth
+        // Initialize FirebaseAuth and DatabaseReference
         mAuth = FirebaseAuth.getInstance();
+        databaseUsers = FirebaseDatabase.getInstance().getReference("Users");
 
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +87,9 @@ public class SignUpActivity extends AppCompatActivity {
                     return;
                 }
 
+                // Disable the register button and show progress bar
                 progressBar.setVisibility(View.VISIBLE);
+                registerButton.setEnabled(false);
 
                 // Firebase user registration
                 mAuth.createUserWithEmailAndPassword(email, password)
@@ -91,12 +97,26 @@ public class SignUpActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 progressBar.setVisibility(View.GONE);
+                                registerButton.setEnabled(true);
+
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(SignUpActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
-                                    // Navigate to login screen
-                                    Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
-                                    startActivity(intent);
-                                    finish();
+                                    String userId = mAuth.getCurrentUser().getUid();
+                                    // Save username to the database
+                                    databaseUsers.child(userId).setValue(new User(username, email))
+                                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                @Override
+                                                public void onComplete(@NonNull Task<Void> task) {
+                                                    if (task.isSuccessful()) {
+                                                        Toast.makeText(SignUpActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
+                                                        // Navigate to login screen
+                                                        Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
+                                                        startActivity(intent);
+                                                        finish();
+                                                    } else {
+                                                        Toast.makeText(SignUpActivity.this, "Failed to save user details", Toast.LENGTH_SHORT).show();
+                                                    }
+                                                }
+                                            });
                                 } else {
                                     Toast.makeText(SignUpActivity.this, "Registration failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                 }
@@ -104,5 +124,18 @@ public class SignUpActivity extends AppCompatActivity {
                         });
             }
         });
+    }
+
+    // User model class
+    public static class User {
+        public String username, email;
+
+        public User() {
+        }
+
+        public User(String username, String email) {
+            this.username = username;
+            this.email = email;
+        }
     }
 }

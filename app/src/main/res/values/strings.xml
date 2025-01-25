@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">FeelSync</string>
+
+    <!-- Calendar Date Text Appearance Style -->
+    <style name="CustomCalendarStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#000000</item> <!-- Set the color you want for the date numbers -->
+        <item name="android:textSize">16sp</item>  <!-- Adjust the text size if needed -->
+    </style>
+
+    <!-- Calendar Month Text Appearance Style -->
+    <style name="CustomMonthStyle" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">#000000</item> <!-- Set the color you want for the month name -->
+        <item name="android:textSize">18sp</item>  <!-- Adjust the text size if needed -->
+    </style>
 </resources>

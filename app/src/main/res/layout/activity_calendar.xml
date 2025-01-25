@@ -1,37 +1,40 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F5E5">
+    android:background="#F8F5E5"
+    android:orientation="vertical"
+    tools:context="com.example.feelsync.CalendarActivity">
 
-    <!-- Header -->
+    <!-- Calendar Header -->
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="#88A24C">
 
-        <TextView
-            android:id="@+id/month_year_text"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/signtoscroll"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="January 2025"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF" />
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+        </LinearLayout>
     </RelativeLayout>
 
     <!-- Calendar View -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/calendar_recycler_view"
+    <CalendarView
+        android:id="@+id/calenderView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/header"
-        android:layout_margin="16dp"
-        android:layout_marginBottom="80dp"
-        android:numColumns="7"
-        android:scrollbars="none" />
+        android:background="#1088A24C"
+        android:weekDayTextAppearance="@color/black"
+        android:dateTextAppearance="@style/CustomCalendarStyle"
+    android:contentDescription="Calendar View" />
+
 
     <!-- Today Section -->
     <LinearLayout
@@ -39,18 +42,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
         android:background="#FFFFFF"
         android:elevation="4dp"
-        android:padding="16dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/today_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Today's Memories"
-            android:textSize="18sp"
             android:textColor="#555555"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <!-- Add Button -->
@@ -58,9 +63,10 @@
             android:id="@+id/add_note_button"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_add_circle"
             android:layout_gravity="end"
+            android:src="@drawable/ic_add_circle"
+            android:contentDescription="Add Note Button"
             app:tint="#FFA726" />
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>
 
