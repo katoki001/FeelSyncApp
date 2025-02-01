@@ -41,11 +41,11 @@ public class AddNoteActivity extends AppCompatActivity {
         saveButton = findViewById(R.id.save_button);
 
         // Set color selection listeners
-        colorHappy.setOnClickListener(v -> selectColor("#DA983C"));
-        colorAngry.setOnClickListener(v -> selectColor("#990F02"));
-        colorSad.setOnClickListener(v -> selectColor("#1C2E4A"));
-        colorCalm.setOnClickListener(v -> selectColor("#477023"));
-        colorLove.setOnClickListener(v -> selectColor("#EB7096"));
+        colorHappy.setOnClickListener(v -> selectColor("Yellow/Happy"));
+        colorAngry.setOnClickListener(v -> selectColor("Red/Angry"));
+        colorSad.setOnClickListener(v -> selectColor("Blue/Sad"));
+        colorCalm.setOnClickListener(v -> selectColor("Green/Calm"));
+        colorLove.setOnClickListener(v -> selectColor("Pink/Lovely"));
 
         // Get selected date from the previous activity
         selectedDate = getIntent().getStringExtra("SELECTED_DATE");

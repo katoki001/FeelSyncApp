@@ -1,11 +1,17 @@
 package com.example.feelsync;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
 
 import com.example.proglish2.R;
 import com.google.firebase.database.DatabaseReference;
@@ -21,13 +27,36 @@ public class CalendarActivity extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
 
+        Button add_note_button;
+
         calendarView = findViewById(R.id.calenderView);
         calendar = Calendar.getInstance();
+
+        add_note_button = findViewById(R.id.add_note_button);
+        add_note_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("CalendarActivity", "Add Note button clicked.");
+
+                // Get the selected date from the CalendarView
+                long selectedDateMillis = calendarView.getDate();
+                SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
+                String selectedDate = sdf.format(selectedDateMillis);
+
+                // Start AddNoteActivity and pass the selected date
+                Intent intent = new Intent(CalendarActivity.this, AddNoteActivity.class);
+                intent.putExtra("SELECTED_DATE", selectedDate);
+                startActivity(intent);
+            }
+        });
+
+
 
         // Initialize Firebase
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -75,8 +104,7 @@ public class CalendarActivity extends AppCompatActivity {
                     Toast.makeText(CalendarActivity.this, "Date saved to Firebase", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(CalendarActivity.this, "Failed to save date", Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
-    }
+                }});}}
+
+
 }

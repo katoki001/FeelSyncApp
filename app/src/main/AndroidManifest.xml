@@ -41,6 +41,14 @@
             android:name="com.example.feelsync.CalendarActivity"
             android:exported="true" /> <!-- Calendar Activity -->
 
+        <activity
+            android:name="com.example.feelsync.AddNoteActivity"
+            android:exported="true" /> <!-- Addnote Activity -->
+
+        <activity
+            android:name="com.example.feelsync.SettingsActivity"
+            android:exported="true" /> <!-- Settings Activity -->
+
 
     </application>
 

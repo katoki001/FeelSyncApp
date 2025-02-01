@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     //--------------------------------------------------------------------------------------------//
     //SIGN UP, SIGN IN, LOG OUT//
     //--------------------------------------------------------------------------------------------//
-    private Button signUpButton, logInButton, logOutButton;
+    private Button signUpButton, logInButton, logOutButton, openButton;
     private FirebaseAuth auth;
 
     @SuppressLint("MissingInflatedId")
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         signUpButton = findViewById(R.id.signbtn);
         logInButton = findViewById(R.id.logbtn);
         logOutButton = findViewById(R.id.logOutbtn);
+        openButton = findViewById(R.id.Open);
 
         // Set click listeners for authentication buttons
         signUpButton.setOnClickListener(v -> {
@@ -50,6 +51,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent); // Start the LogOutActivity
         });
 
+        openButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, MainPageActivity.class);
+            startActivity(intent); //Just opening the main page
+        });
+
+
 
         //--------------------------------------------------------------------------------------------//
         //ACTIVITY MAIN XML JAVA CODES//
@@ -58,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Initialize buttons for main activity actions
         Button instructionBtn = findViewById(R.id.Instructionbtn);
-        Button settingsBtn = findViewById(R.id.Setingsbtn);
+        Button settingsBtn = findViewById(R.id.Settingsbtn);
         Button aiBtn = findViewById(R.id.Aibtn);
         Button calendarBtn = findViewById(R.id.Calendarbtn);
         Button musicBtn = findViewById(R.id.Musicbtn);

@@ -1,4 +1,5 @@
 package com.example.feelsync;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +13,7 @@ import com.example.proglish2.R;
 public class MainPageActivity extends AppCompatActivity {
         private Button instructionBtn, settingsBtn, aiBtn, calendarBtn, musicBtn, triggerBtn;
 
+        @SuppressLint("MissingInflatedId")
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -19,7 +21,7 @@ public class MainPageActivity extends AppCompatActivity {
 
             // Initialize buttons
             instructionBtn = findViewById(R.id.Instructionbtn);
-            settingsBtn = findViewById(R.id.Setingsbtn);
+            settingsBtn = findViewById(R.id.Settingsbtn);
             aiBtn = findViewById(R.id.Aibtn);
             calendarBtn = findViewById(R.id.Calendarbtn);
             musicBtn = findViewById(R.id.Musicbtn);
@@ -34,19 +36,18 @@ public class MainPageActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, InstructionActivity.class);
                     startActivity(intent);
                 }
-            });
+            });*/
 
             settingsBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.d("MainActivity", "Settings button clicked.");
-                    // Navigate to the Settings Activity or perform related action
-                    Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-                    startActivity(intent);
+                    Log.d("MainPageActivity", "Settings button clicked");
+                    Intent intent = new Intent(MainPageActivity.this, SettingsActivity.class);
+                    startActivity(intent);// Debug message
                 }
             });
 
-            aiBtn.setOnClickListener(new View.OnClickListener() {
+            /*aiBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Log.d("MainActivity", "AI Chat button clicked.");
@@ -56,10 +57,12 @@ public class MainPageActivity extends AppCompatActivity {
                 }
             });*/
 
+
+
             calendarBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.d("MainActivity", "Calendar button clicked.");
+                    Log.d("MainPageActivity", "Calendar button clicked.");
                     // Navigate to the Calendar Activity or perform related action
                     Intent intent = new Intent(MainPageActivity.this, CalendarActivity.class);
                     startActivity(intent);
