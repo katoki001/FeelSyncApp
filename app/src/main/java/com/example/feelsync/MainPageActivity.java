@@ -41,11 +41,23 @@ public class MainPageActivity extends AppCompatActivity {
             settingsBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.d("MainPageActivity", "Settings button clicked");
+                    Log.d("MainPageActivity", "Settings button clicked.");
+                    // Navigate to the Calendar Activity or perform related action
                     Intent intent = new Intent(MainPageActivity.this, SettingsActivity.class);
-                    startActivity(intent);// Debug message
+                    startActivity(intent);
                 }
             });
+
+            calendarBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.d("MainPageActivity", "Calendar button clicked.");
+                    // Navigate to the Calendar Activity or perform related action
+                    Intent intent = new Intent(MainPageActivity.this, CalendarActivity.class);
+                    startActivity(intent);
+                }
+            });
+
 
             /*aiBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -59,15 +71,6 @@ public class MainPageActivity extends AppCompatActivity {
 
 
 
-            calendarBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Log.d("MainPageActivity", "Calendar button clicked.");
-                    // Navigate to the Calendar Activity or perform related action
-                    Intent intent = new Intent(MainPageActivity.this, CalendarActivity.class);
-                    startActivity(intent);
-                }
-            });
 
             /*musicBtn.setOnClickListener(new View.OnClickListener() {
                 @Override

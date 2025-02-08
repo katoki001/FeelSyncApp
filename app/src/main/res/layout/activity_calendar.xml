@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -33,15 +34,13 @@
         android:background="#1088A24C"
         android:weekDayTextAppearance="@color/black"
         android:dateTextAppearance="@style/CustomCalendarStyle"
-    android:contentDescription="Calendar View" />
-
+        android:contentDescription="Calendar View" />
 
     <!-- Today Section -->
     <LinearLayout
         android:id="@+id/today_section"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"
         android:background="#FFFFFF"
         android:elevation="4dp"
@@ -58,14 +57,26 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
+        <!-- RecyclerView for Notes -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scrollbars="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
         <!-- Add Button -->
         <Button
             android:id="@+id/add_note_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add Note"
-            android:layout_marginLeft="250dp"/>
-
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"/>
     </LinearLayout>
 </LinearLayout>
+
 

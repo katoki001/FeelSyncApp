@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FeelSync"
+        tools:ignore="ExtraText"
         tools:targetApi="31">
         <!-- Main Activity -->
         <activity
@@ -45,9 +46,14 @@
             android:name="com.example.feelsync.AddNoteActivity"
             android:exported="true" /> <!-- Addnote Activity -->
 
-        <activity
+        <!-- <activity
             android:name="com.example.feelsync.SettingsActivity"
-            android:exported="true" /> <!-- Settings Activity -->
+            android:exported="true" />-->  <!-- Settings Activity -->
+        <activity android:name="com.example.feelsync.NoteAdapter" android:exported="true"
+            tools:ignore="Instantiatable,MissingClass" />"
+
+        <activity android:name="com.example.feelsync.Note" android:exported="true"
+            tools:ignore="Instantiatable,MissingClass" />"
 
 
     </application>
