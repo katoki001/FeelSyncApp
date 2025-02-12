@@ -64,19 +64,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mainpage); // Replace with your XML file name if different
 
         // Initialize buttons for main activity actions
-        Button instructionBtn = findViewById(R.id.Instructionbtn);
         Button settingsBtn = findViewById(R.id.Settingsbtn);
         Button aiBtn = findViewById(R.id.Aibtn);
         Button calendarBtn = findViewById(R.id.Calendarbtn);
         Button musicBtn = findViewById(R.id.Musicbtn);
-        Button triggerBtn = findViewById(R.id.Trigerbtn);
+
 
         // Set click listeners for each button
-        /*instructionBtn.setOnClickListener(v -> {
-            // Add your logic for the Instruction button
-            Intent intent = new Intent(MainActivity.this, InstructionActivity.class);
-            startActivity(intent);
-        });
 
         settingsBtn.setOnClickListener(v -> {
             // Add your logic for the Settings button
@@ -84,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        aiBtn.setOnClickListener(v -> {
+        /*   aiBtn.setOnClickListener(v -> {
             // Add your logic for the AI Chat button
             Intent intent = new Intent(MainActivity.this, AIChatActivity.class);
             startActivity(intent);
@@ -100,12 +94,7 @@ public class MainActivity extends AppCompatActivity {
             // Add your logic for the Music button
             Intent intent = new Intent(MainActivity.this, MusicActivity.class);
             startActivity(intent);
-        });
-
-        triggerBtn.setOnClickListener(v -> {
-            // Add your logic for the Triggers button
-            Intent intent = new Intent(MainActivity.this, TriggerActivity.class);
-            startActivity(intent);
         });*/
+
     }
 }

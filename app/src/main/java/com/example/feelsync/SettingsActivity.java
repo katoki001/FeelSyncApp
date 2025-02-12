@@ -20,7 +20,7 @@ public class SettingsActivity extends AppCompatActivity {
     private AppCompatButton editProfileButton;
     private TextView userName;
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

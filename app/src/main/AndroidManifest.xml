@@ -46,9 +46,11 @@
             android:name="com.example.feelsync.AddNoteActivity"
             android:exported="true" /> <!-- Addnote Activity -->
 
-        <!-- <activity
+        <activity
             android:name="com.example.feelsync.SettingsActivity"
-            android:exported="true" />-->  <!-- Settings Activity -->
+            android:exported="true" /><!-- Settings Activity -->
+
+
         <activity android:name="com.example.feelsync.NoteAdapter" android:exported="true"
             tools:ignore="Instantiatable,MissingClass" />"
 
