@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,50 +19,52 @@
         android:theme="@style/Theme.FeelSync"
         tools:ignore="ExtraText"
         tools:targetApi="31">
+
         <!-- Main Activity -->
         <activity
             android:name="com.example.feelsync.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Other Activities -->
         <activity
             android:name="com.example.feelsync.SignUpActivity"
             android:exported="true" />  <!-- Sign Up Activity -->
-
         <activity
             android:name="com.example.feelsync.LoginActivity"
             android:exported="true" /> <!-- Log In Activity -->
         <activity
             android:name="com.example.feelsync.LogOutActivity"
             android:exported="true" /> <!-- Log Out Activity -->
-
         <activity
             android:name="com.example.feelsync.MainPageActivity"
             android:exported="true" /> <!-- Main Page Activity -->
-
         <activity
             android:name="com.example.feelsync.CalendarActivity"
             android:exported="true" /> <!-- Calendar Activity -->
-
         <activity
             android:name="com.example.feelsync.AddNoteActivity"
             android:exported="true" /> <!-- Addnote Activity -->
-
         <activity
             android:name="com.example.feelsync.SettingsActivity"
-            android:exported="true" /><!-- Settings Activity -->
+            android:exported="true" /> <!-- Settings Activity -->
 
-
-        <activity android:name="com.example.feelsync.NoteAdapter" android:exported="true"
-            tools:ignore="Instantiatable,MissingClass" />"
-
-        <activity android:name="com.example.feelsync.Note" android:exported="true"
-            tools:ignore="Instantiatable,MissingClass" />"
-
+        <!-- Note Activities -->
+        <activity
+            android:name="com.example.feelsync.ViewNoteActivity"
+            android:exported="true" /> <!-- View Note Activity -->
+        <activity
+            android:name="com.example.feelsync.NoteAdapter"
+            android:exported="true"
+            tools:ignore="Instantiatable,MissingClass" /> <!-- Note Adapter Activity -->
+        <activity
+            android:name="com.example.feelsync.Note"
+            android:exported="true"
+            tools:ignore="Instantiatable,MissingClass" /> <!-- Note Activity -->
 
     </application>
 

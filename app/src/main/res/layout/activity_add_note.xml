@@ -28,8 +28,8 @@
             android:id="@+id/color_happy"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="#DA983C"
-            android:layout_marginEnd="8dp" />
+            android:layout_marginEnd="8dp"
+            android:background="#DA983C" />
 
         <View
             android:id="@+id/color_angry"

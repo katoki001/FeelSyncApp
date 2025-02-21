@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
 
     //--------------------------------------------------------------------------------------------//
-    //SIGN UP, SIGN IN, LOG OUT//
+    //SIGN UP, SIGN IN, LOG OUT, OPEN//
     //--------------------------------------------------------------------------------------------//
     private Button signUpButton, logInButton, logOutButton, openButton;
     private FirebaseAuth auth;
@@ -55,46 +55,6 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, MainPageActivity.class);
             startActivity(intent); //Just opening the main page
         });
-
-
-
-        //--------------------------------------------------------------------------------------------//
-        //ACTIVITY MAIN XML JAVA CODES//
-        //--------------------------------------------------------------------------------------------//
-        setContentView(R.layout.activity_mainpage); // Replace with your XML file name if different
-
-        // Initialize buttons for main activity actions
-        Button settingsBtn = findViewById(R.id.Settingsbtn);
-        Button aiBtn = findViewById(R.id.Aibtn);
-        Button calendarBtn = findViewById(R.id.Calendarbtn);
-        Button musicBtn = findViewById(R.id.Musicbtn);
-
-
-        // Set click listeners for each button
-
-        settingsBtn.setOnClickListener(v -> {
-            // Add your logic for the Settings button
-            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-            startActivity(intent);
-        });
-
-        /*   aiBtn.setOnClickListener(v -> {
-            // Add your logic for the AI Chat button
-            Intent intent = new Intent(MainActivity.this, AIChatActivity.class);
-            startActivity(intent);
-        });*/
-
-        calendarBtn.setOnClickListener(v -> {
-            // Add your logic for the Calendar button
-            Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
-            startActivity(intent);
-        });
-
-        /*musicBtn.setOnClickListener(v -> {
-            // Add your logic for the Music button
-            Intent intent = new Intent(MainActivity.this, MusicActivity.class);
-            startActivity(intent);
-        });*/
 
     }
 }

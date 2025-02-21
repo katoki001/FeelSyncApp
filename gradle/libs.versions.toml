@@ -21,6 +21,7 @@ coreKtx = "1.15.0"
 kotlin = "1.9.24"
 firebaseDatabase = "21.0.0"
 firebaseStorage = "21.0.1"
+firebaseFirestore = "25.1.2"
 
 [libraries]
 activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
@@ -43,6 +44,7 @@ recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "r
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

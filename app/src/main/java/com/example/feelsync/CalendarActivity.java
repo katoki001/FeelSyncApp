@@ -4,28 +4,26 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.icu.text.SimpleDateFormat;
+import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.feelsync.AddNoteActivity;
+import com.example.feelsync.Note;
+import com.example.feelsync.NoteAdapter;
 import com.example.proglish2.R;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
@@ -33,8 +31,9 @@ import java.util.Map;
 public class CalendarActivity extends AppCompatActivity {
     private CalendarView calendarView;
     private Calendar calendar;
-    private FirebaseDatabase firebaseDatabase;
-    private DatabaseReference databaseReference;
+    private FirebaseFirestore db;
+    private CollectionReference notesRef;
+
     private Button addNoteButton;
     private RecyclerView recyclerView;
     private NoteAdapter noteAdapter;
@@ -56,8 +55,8 @@ public class CalendarActivity extends AppCompatActivity {
         calendar = Calendar.getInstance();
 
         // Initialize Firebase
-        firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference("notes");
+        db = FirebaseFirestore.getInstance();
+        notesRef = db.collection("notes");
 
         // Setup RecyclerView
         notesList = new ArrayList<>();
@@ -95,30 +94,25 @@ public class CalendarActivity extends AppCompatActivity {
         return sdf.format(calendarView.getDate());
     }
 
-    // Load notes from Firebase
+    // Load notes from Firebase based on selected date
     private void loadNotesFromFirebase() {
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                notesList.clear();
-                dateColorMap.clear();
+        notesRef.whereEqualTo("date", selectedDate).get()  // Filter by selected date
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        notesList.clear();
+                        dateColorMap.clear();
 
-                for (DataSnapshot noteSnapshot : snapshot.getChildren()) {
-                    Note note = noteSnapshot.getValue(Note.class);
-                    if (note != null) {
-                        notesList.add(note);
-                        dateColorMap.put(note.date, note.emotion);
+                        for (QueryDocumentSnapshot document : task.getResult()) {
+                            Note note = document.toObject(Note.class);
+                            notesList.add(note);
+                            dateColorMap.put(note.date, note.emotion);
+                        }
+                        noteAdapter.notifyDataSetChanged();
+                        updateCalendarColors();
+                    } else {
+                        Log.e("CalendarActivity", "Ошибка загрузки данных", task.getException());
                     }
-                }
-                noteAdapter.notifyDataSetChanged();
-                updateCalendarColors();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Log.e("CalendarActivity", "Failed to load notes", error.toException());
-            }
-        });
+                });
     }
 
     // Change calendar day colors based on selected emotion
@@ -134,4 +128,17 @@ public class CalendarActivity extends AppCompatActivity {
             }
         }
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == ADD_NOTE_REQUEST && resultCode == Activity.RESULT_OK) {
+            // Reload notes after returning from AddNoteActivity
+            loadNotesFromFirebase();
+        }
+    }
 }
+
+
+

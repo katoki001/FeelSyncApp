@@ -1,5 +1,6 @@
 package com.example.feelsync;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,6 +37,13 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
 
         // Set text color based on emotion
         holder.emotionTextView.setTextColor(getColorFromEmotion(note.emotion));
+
+        // Set click listener to open full note on click
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(), ViewNoteActivity.class);
+            intent.putExtra("NOTE_TEXT", note.note); // Pass full note text
+            v.getContext().startActivity(intent);
+        });
     }
 
     @Override
