@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.proglish2.R;
@@ -56,7 +55,7 @@ public class AddNoteActivity extends AppCompatActivity {
         colorLove.setOnClickListener(v -> selectColor("Lovely"));
 
         selectedDate = getIntent().getStringExtra("SELECTED_DATE");
-        uploadButton.setOnClickListener(v -> openImagePicker());
+        //uploadButton.setOnClickListener(v -> openImagePicker());
         saveButton.setOnClickListener(v -> saveData());
     }
 
@@ -121,12 +120,13 @@ public class AddNoteActivity extends AppCompatActivity {
         db.collection("notes").add(noteData)
                 .addOnSuccessListener(documentReference -> {
                     String noteId = documentReference.getId(); // Get the Firestore document ID
+                    // Pass the note and emotion to the ViewNoteActivity
                     Intent intent = new Intent(AddNoteActivity.this, ViewNoteActivity.class);
-                    intent.putExtra("NOTE_ID", noteId);  // Pass the noteId to ViewNoteActivity
+                    intent.putExtra("NOTE_TEXT", note);  // Pass the note text directly
+                    intent.putExtra("NOTE_EMOTION", selectedColor);  // Pass the emotion color
                     startActivity(intent);
                     finish();
                 })
                 .addOnFailureListener(e -> Toast.makeText(this, "Error saving note", Toast.LENGTH_SHORT).show());
-
     }
 }
