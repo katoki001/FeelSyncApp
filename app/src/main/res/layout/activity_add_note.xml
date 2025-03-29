@@ -74,7 +74,7 @@
         android:hint="Write your note here"
         android:padding="12dp" />
 
-    <TextView
+    <!-- <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Upload Picture"
@@ -88,7 +88,7 @@
         android:layout_height="wrap_content"
         android:text="Upload Image"
         android:backgroundTint="@color/dark_brown"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp" />-->
 
     <!-- Save Button -->
     <Button

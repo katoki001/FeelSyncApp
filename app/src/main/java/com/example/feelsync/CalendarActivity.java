@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.proglish2.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
@@ -42,45 +43,81 @@ public class CalendarActivity extends AppCompatActivity {
     private String selectedDate;
     private static final int ADD_NOTE_REQUEST = 1;
 
+    private BottomNavigationView bottomNavigationView;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
 
-        // Initialize Views
+        // Инициализация Views
         calendarView = findViewById(R.id.calenderView);
         addNoteButton = findViewById(R.id.add_note_button);
         recyclerView = findViewById(R.id.recyclerView);
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
+
         calendar = Calendar.getInstance();
 
-        // Initialize Firebase
+        // Инициализация Firebase
         db = FirebaseFirestore.getInstance();
         notesRef = db.collection("notes");
 
-        // Setup RecyclerView
+        // Настройка RecyclerView
         notesList = new ArrayList<>();
         noteAdapter = new NoteAdapter(notesList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(noteAdapter);
 
-        // Map to store colors for dates
+        // Карта для хранения цветов дат
         dateColorMap = new HashMap<>();
 
-        // Get current date
+        // Получение текущей даты
         selectedDate = getCurrentDate();
 
-        // Load notes from Firebase
+        // Загрузка заметок
         loadNotesFromFirebase();
 
-        // Open AddNoteActivity with selected date
+        // Открытие AddNoteActivity
         addNoteButton.setOnClickListener(v -> openAddNoteActivity());
 
-        // Change selected date and load notes for that date
+        // Изменение выбранной даты
         calendarView.setOnDateChangeListener((view, year, month, dayOfMonth) -> {
             selectedDate = dayOfMonth + "/" + (month + 1) + "/" + year;
             loadNotesFromFirebase();
         });
+
+        // Обработчик для Bottom Navigation
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        if (bottomNavigationView != null) {
+            bottomNavigationView.setOnItemSelectedListener(item -> {
+                int itemId = item.getItemId();
+                if (itemId == R.id.nav_calendar) {
+                    return true;
+                } else if (itemId == R.id.nav_home) {
+                    startActivity(new Intent(getApplicationContext(), MainPageActivity.class));
+                    finish();
+                    return true;
+                } else if (itemId == R.id.nav_settings) {
+                    startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
+                    finish();
+                    return true;
+                } else if (itemId == R.id.nav_ai) {
+                    startActivity(new Intent(getApplicationContext(), AIChatActivity.class));
+                    finish();
+                    return true;
+                } else if (itemId == R.id.nav_music) {
+                    startActivity(new Intent(getApplicationContext(), MusicActivity.class));
+                    finish();
+                    return true;
+                }
+                return false;
+            });
+        } else {
+            Log.e("CalendarActivity", "BottomNavigationView is null. Check XML layout.");
+        }
+
     }
 
     private void openAddNoteActivity() {
@@ -91,12 +128,11 @@ public class CalendarActivity extends AppCompatActivity {
 
     private String getCurrentDate() {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
-        return sdf.format(calendarView.getDate());
+        return sdf.format(calendar.getTime());
     }
 
-    // Load notes from Firebase based on selected date
     private void loadNotesFromFirebase() {
-        notesRef.whereEqualTo("date", selectedDate).get()  // Filter by selected date
+        notesRef.whereEqualTo("date", selectedDate).get()
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         notesList.clear();
@@ -108,25 +144,11 @@ public class CalendarActivity extends AppCompatActivity {
                             dateColorMap.put(note.date, note.emotion);
                         }
                         noteAdapter.notifyDataSetChanged();
-                        updateCalendarColors();
+                        // Здесь можно реализовать отображение эмоций в календаре
                     } else {
                         Log.e("CalendarActivity", "Ошибка загрузки данных", task.getException());
                     }
                 });
-    }
-
-    // Change calendar day colors based on selected emotion
-    private void updateCalendarColors() {
-        for (Map.Entry<String, String> entry : dateColorMap.entrySet()) {
-            String color = entry.getValue();
-            if (color.contains("Red")) {
-                calendarView.setBackgroundColor(Color.RED);
-            } else if (color.contains("Blue")) {
-                calendarView.setBackgroundColor(Color.BLUE);
-            } else if (color.contains("Green")) {
-                calendarView.setBackgroundColor(Color.GREEN);
-            }
-        }
     }
 
     @Override
@@ -134,9 +156,7 @@ public class CalendarActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == ADD_NOTE_REQUEST && resultCode == Activity.RESULT_OK) {
-            // Reload notes after returning from AddNoteActivity
             loadNotesFromFirebase();
         }
     }
 }
-

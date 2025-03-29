@@ -3,16 +3,19 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="dark_brown">#635147</color>
-    <color name="cherry">#990F02</color>
+    <color name="maccofee">#6f4e37</color>
     <color name="grren_navy">#25330F</color>
     <color name="Violet_blue">#6F67CB</color>
     <color name="Light_cobalt">#97A5ED</color>">
-    <color name="Light_green">#477023</color>">
     <color name="Japanese_Violet">#502A50</color>
     <color name="American_blue">#3A3E6C</color>">
     <color name="Foggy_Love">#c1bce0</color>">
     <color name="pink_blush">#e9b2c6</color>">
-
+    <color name="Calm">#477023</color>">
+    <color name="Sad">#1C2E4A</color>">
+    <color name="Happy">#DA983C</color>">
+    <color name="Lovely">#EB7096</color>">
+    <color name="Mad">#990F02</color>
 
 
 </resources>
