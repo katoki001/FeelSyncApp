@@ -9,8 +9,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
-
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 
     <application
@@ -54,9 +54,37 @@
         <activity
             android:name="com.example.feelsync.AddNoteActivity"
             android:exported="true" /> <!-- Addnote Activity -->
+<<<<<<< HEAD
         <activity
             android:name="com.example.feelsync.SettingsActivity"
             android:exported="true" /> <!-- Settings Activity -->
+        <activity
+            android:name="com.example.feelsync.MusicActivity"
+            android:exported="true" /> <!-- Music Activity -->
+        <activity
+            android:name="com.example.feelsync.AIChatActivity"
+            android:exported="true" /> <!-- AI Activity -->
+=======
+
+        <!-- <activity
+            android:name="com.example.feelsync.SettingsActivity"
+            android:exported="true" />-->  <!-- Settings Activity -->
+        <activity android:name="com.example.feelsync.NoteAdapter" android:exported="true"
+            tools:ignore="Instantiatable,MissingClass" />"
+
+        <activity android:name="com.example.feelsync.Note" android:exported="true"
+            tools:ignore="Instantiatable,MissingClass" />"
+>>>>>>> 759d1d9 (changes in code)
+
+
+        <activity
+            android:name="com.example.feelsync.OpenAIChat"
+            android:exported="true"
+            tools:ignore="Instantiatable" /> <!-- AI Activity -->
+
+        <activity
+            android:name="com.example.feelsync.ChooseColorActivity"
+            android:exported="true" />
 
         <!-- Note Activities -->
         <activity
