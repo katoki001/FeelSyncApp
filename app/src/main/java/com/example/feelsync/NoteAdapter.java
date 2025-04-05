@@ -1,8 +1,14 @@
 package com.example.feelsync;
 
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+>>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7
 import android.content.Intent;
+=======
+>>>>>>> 759d1d9 (changes in code)
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,6 +52,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
 
         // Set text color based on emotion
         holder.emotionTextView.setTextColor(getColorFromEmotion(note.emotion));
+<<<<<<< HEAD
 
         // Set click listener to open full note
         holder.itemView.setOnClickListener(v -> {
@@ -55,11 +62,16 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
             intent.putExtra("NOTE_DATE", note.date);
             v.getContext().startActivity(intent);
         });
+<<<<<<< HEAD
 
         // Set delete button click listener
         holder.deleteButton.setOnClickListener(v -> {
             calendarActivity.deleteNote(note);
         });
+=======
+=======
+>>>>>>> 759d1d9 (changes in code)
+>>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7
     }
 
     @Override

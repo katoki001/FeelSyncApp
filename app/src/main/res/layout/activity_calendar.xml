@@ -18,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+<<<<<<< HEAD
 
             <!-- Calendar Header -->
             <RelativeLayout
@@ -108,12 +109,148 @@
     </ScrollView>
 
     <!-- Bottom Navigation (fixed at the bottom) -->
+=======
+
+            <!-- Calendar Header -->
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#88A24C">
+
+                <LinearLayout
+                    android:id="@+id/signtoscroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal"/>
+            </RelativeLayout>
+
+            <!-- Calendar View -->
+            <CalendarView
+                android:id="@+id/calenderView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:weekDayTextAppearance="@color/black"
+                android:dateTextAppearance="@style/CustomCalendarStyle"
+                android:contentDescription="Calendar View"/>
+
+            <!-- Today Section -->
+            <LinearLayout
+                android:id="@+id/today_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/today_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today's Memories"
+                    android:textColor="#555555"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- RecyclerView for Notes -->
+
+                <!-- Add Button -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:scrollbars="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <Button
+                    android:id="@+id/add_note_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Note"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation (фиксирован внизу) -->
+>>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:background="#88A24C"
         app:itemIconSize="30dp"
         app:menu="@menu/bottom_nav_menu"
         android:layout_alignParentBottom="true"/>
 </LinearLayout>
+=======
+<<<<<<< HEAD
+        android:background="@color/maccofee"
+        app:itemIconSize="56dp"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</LinearLayout>
+=======
+        android:background="#1088A24C"
+        android:weekDayTextAppearance="@color/black"
+        android:dateTextAppearance="@style/CustomCalendarStyle"
+        android:contentDescription="Calendar View" />
+
+    <!-- Today Section -->
+    <LinearLayout
+        android:id="@+id/today_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/today_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Memories"
+            android:textColor="#555555"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- RecyclerView for Notes -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scrollbars="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/add_note_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Note"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+>>>>>>> 759d1d9 (changes in code)
+>>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7

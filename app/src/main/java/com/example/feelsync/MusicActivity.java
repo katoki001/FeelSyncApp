@@ -1,5 +1,6 @@
 package com.example.feelsync;
 
+<<<<<<< HEAD
 import com.example.proglish2.R;
 
 import android.Manifest;
@@ -35,6 +36,17 @@ public class MusicActivity extends AppCompatActivity {
     private Handler handler = new Handler();
     private Uri selectedMusicUri;
 
+=======
+import android.content.Intent;
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.proglish2.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+public class MusicActivity extends AppCompatActivity {
+>>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7
     private BottomNavigationView bottomNavigationView;
 
     @Override
@@ -42,6 +54,7 @@ public class MusicActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
 
+<<<<<<< HEAD
         // Initialize UI components
         btnSelectMusic = findViewById(R.id.btn_select_music);
         btnPlayPause = findViewById(R.id.btn_play_pause);
@@ -52,31 +65,52 @@ public class MusicActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
+=======
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            int itemId = item.getItemId();
+
+>>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7
             if (itemId == R.id.nav_music) {
                 return true;
             } else if (itemId == R.id.nav_calendar) {
                 startActivity(new Intent(getApplicationContext(), CalendarActivity.class));
+<<<<<<< HEAD
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
                 finish();
                 return true;
             } else if (itemId == R.id.nav_home) {
                 startActivity(new Intent(getApplicationContext(), MainPageActivity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
+=======
+>>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7
                 finish();
                 return true;
             } else if (itemId == R.id.nav_settings) {
                 startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
+<<<<<<< HEAD
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
+=======
+                finish();
+                return true;
+            } else if (itemId == R.id.nav_home) {
+                startActivity(new Intent(getApplicationContext(), MainPageActivity.class));
+>>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7
                 finish();
                 return true;
             } else if (itemId == R.id.nav_ai) {
                 startActivity(new Intent(getApplicationContext(), AIChatActivity.class));
+<<<<<<< HEAD
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
+=======
+>>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7
                 finish();
                 return true;
             }
             return false;
         });
+<<<<<<< HEAD
 
         // Request storage permission
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
@@ -194,3 +228,7 @@ public class MusicActivity extends AppCompatActivity {
         }
     }
 }
+=======
+    }
+}
+>>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7

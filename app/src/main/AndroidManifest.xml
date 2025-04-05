@@ -55,6 +55,7 @@
         <activity
             android:name="com.example.feelsync.AddNoteActivity"
             android:exported="true" /> <!-- Addnote Activity -->
+<<<<<<< HEAD
         <activity
             android:name="com.example.feelsync.SettingsActivity"
             android:exported="true" /> <!-- Settings Activity -->
@@ -64,6 +65,7 @@
         <activity
             android:name="com.example.feelsync.AIChatActivity"
             android:exported="true" /> <!-- AI Activity -->
+<<<<<<< HEAD
 
         <activity
             android:name="com.example.feelsync.CustomCalendarView"
@@ -81,6 +83,27 @@
             android:exported="true"
             tools:ignore="Instantiatable" />
         <activity
+=======
+=======
+
+        <!-- <activity
+            android:name="com.example.feelsync.SettingsActivity"
+            android:exported="true" />-->  <!-- Settings Activity -->
+        <activity android:name="com.example.feelsync.NoteAdapter" android:exported="true"
+            tools:ignore="Instantiatable,MissingClass" />"
+
+        <activity android:name="com.example.feelsync.Note" android:exported="true"
+            tools:ignore="Instantiatable,MissingClass" />"
+>>>>>>> 759d1d9 (changes in code)
+
+
+        <activity
+            android:name="com.example.feelsync.OpenAIChat"
+            android:exported="true"
+            tools:ignore="Instantiatable" /> <!-- AI Activity -->
+
+        <activity
+>>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7
             android:name="com.example.feelsync.ChooseColorActivity"
             android:exported="true" />
 
