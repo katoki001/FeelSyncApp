@@ -1,92 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    android:background="@color/white">
+    android:background="@color/background_gray"
+    tools:context="com.example.feelsync.AIChatActivity">
 
-    <TextView
-        android:id="@+id/chat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Chat"
-        android:textSize="18sp"
-        android:textColor="@color/black"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"/>
+    <!-- App Bar with chat title -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/American_blue"
+        android:elevation="4dp"
+        app:title="Chat"
+        app:titleTextColor="@color/white"
 
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
+    <!-- Chat messages RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recycler_view"
-        android:background="@color/white"/>
+        android:layout_above="@id/input_container"
+        android:layout_below="@id/toolbar"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" />
 
-
-
-
-    <!-- User Input Field -->
-
-    <ScrollView
-        android:id="@+id/chat_scroll_view"
+    <!-- Input area container with shadow -->
+    <LinearLayout
+        android:id="@+id/input_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/bottom_navigation"
-        android:layout_below="@id/chat"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="0dp">
+        android:orientation="vertical"
+        android:background="@drawable/input_container_background"
+        android:elevation="8dp"
+        android:paddingTop="8dp">
 
+        <!-- Quick support button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_quick_support"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="I need support"
+            android:textColor="@color/American_blue"
+            app:strokeColor="@color/American_blue"
+            app:strokeWidth="1dp"
+            app:icon="@drawable/ic_support"
+            app:iconTint="@color/American_blue"
+            app:iconPadding="4dp"/>
+
+        <!-- Message input row -->
         <LinearLayout
-            android:id="@+id/chat_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
-            android:paddingBottom="8dp" />
-    </ScrollView>
+            android:paddingBottom="8dp">
 
-    <EditText
-        android:id="@+id/message_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Type your message..."
-        android:background="@drawable/input_bg"
-        android:padding="10dp"
-        android:maxLines="1"
-        android:inputType="text"
-        android:layout_above="@id/bottom_navigation"
-        android:layout_toStartOf="@id/send_button"
-        android:layout_marginBottom="10dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Type your message..."
+                app:boxBackgroundMode="outline"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/primary_color"
+                app:boxCornerRadiusBottomEnd="16dp"
+                app:boxCornerRadiusBottomStart="16dp"
+                app:boxCornerRadiusTopEnd="16dp"
+                app:boxCornerRadiusTopStart="16dp">
 
-    <!-- Send Message Button -->
-    <Button
-        android:id="@+id/send_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Send"
-        android:backgroundTint="@color/black"
-        android:textColor="@color/white"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@id/bottom_navigation"
-        android:layout_marginBottom="10dp"
-        android:layout_marginStart="8dp"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/message_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="3"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Bottom Navigation Bar -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/send_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/ic_send"
+                app:backgroundTint="@color/American_blue"
+                app:tint="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom navigation with elevation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/maccofee"
-        app:itemIconSize="56dp"
-        app:menu="@menu/bottom_nav_menu"
-        android:layout_alignParentBottom="true"/>
-
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="16dp"
+        app:itemIconTint="@drawable/bottom_nav_colors"
+        app:itemTextColor="@drawable/bottom_nav_colors"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu"/>
 </RelativeLayout>
-

@@ -6,10 +6,23 @@
     android:padding="16dp">
 
     <TextView
+        android:id="@+id/full_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/full_emotion_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
         android:id="@+id/full_note_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Full note will appear here"
-        android:textSize="16sp"/>
-
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
 </LinearLayout>

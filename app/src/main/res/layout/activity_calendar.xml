@@ -26,6 +26,22 @@
                 android:layout_height="80dp"
                 android:background="#88A24C">
 
+                <TextView
+                    android:id="@+id/Calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="150dp"
+                    android:padding="16dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Calendar"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <LinearLayout
                     android:id="@+id/signtoscroll"
                     android:layout_width="match_parent"
@@ -36,15 +52,14 @@
                     android:orientation="horizontal"/>
             </RelativeLayout>
 
-            <!-- Calendar View -->
-            <CalendarView
-                android:id="@+id/calenderView"
+
+            <!-- Custom Calendar View -->
+            <com.example.feelsync.CustomCalendarView
+                android:id="@+id/customCalendarView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
-                android:weekDayTextAppearance="@color/black"
-                android:dateTextAppearance="@style/CustomCalendarStyle"
-                android:contentDescription="Calendar View"/>
+                android:padding="8dp" />
 
             <!-- Today Section -->
             <LinearLayout
@@ -68,8 +83,6 @@
                     android:textStyle="bold" />
 
                 <!-- RecyclerView for Notes -->
-
-                <!-- Add Button -->
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerView"
                     android:layout_width="match_parent"
@@ -79,25 +92,28 @@
                     android:scrollbars="vertical"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
+                <!-- Add Button -->
                 <Button
                     android:id="@+id/add_note_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Add Note"
                     android:layout_gravity="end"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="16dp"/>
+                    android:layout_marginTop="16dp"
+                    android:text="Add Note"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#88A24C"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom Navigation (фиксирован внизу) -->
+    <!-- Bottom Navigation (fixed at the bottom) -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/maccofee"
-        app:itemIconSize="56dp"
-        app:menu="@menu/bottom_nav_menu"/>
-
+        android:background="#88A24C"
+        app:itemIconSize="30dp"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_alignParentBottom="true"/>
 </LinearLayout>

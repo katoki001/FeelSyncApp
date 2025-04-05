@@ -1,13 +1,18 @@
 package com.example.feelsync;
 
+import static android.content.ContentValues.TAG;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -18,30 +23,47 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    private EditText usernameEditText, emailEditText, passwordEditText, rePasswordEditText;
+    private EditText emailEditText, passwordEditText;
     private Button registerButton;
+    private Button signinnow;
     private ProgressBar progressBar;
     private FirebaseAuth mAuth;
     private DatabaseReference databaseUsers;
+    TextView textView;
 
-    @SuppressLint("MissingInflatedId")
+    @Override
+    public void onStart(){super.onStart();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+            Intent intent = new Intent(SignUpActivity.this, MainPageActivity.class);
+            startActivity(intent);
+            finish();}}
+
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        // Initialize UI components
-        usernameEditText = findViewById(R.id.username);
         emailEditText = findViewById(R.id.email);
         passwordEditText = findViewById(R.id.password);
-        rePasswordEditText = findViewById(R.id.repassword);
-        registerButton = findViewById(R.id.signupbtn);
+        registerButton = findViewById(R.id.registerbtn);
         progressBar = findViewById(R.id.progressBar);
+        textView = findViewById(R.id.signinnow);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         // Initialize FirebaseAuth and DatabaseReference
         mAuth = FirebaseAuth.getInstance();
@@ -50,18 +72,11 @@ public class SignUpActivity extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = usernameEditText.getText().toString().trim();
-                String email = emailEditText.getText().toString().trim();
-                String password = passwordEditText.getText().toString().trim();
-                String rePassword = rePasswordEditText.getText().toString().trim();
+                String email = String.valueOf(emailEditText.getText());
+                String password = String.valueOf(passwordEditText.getText());
 
-                // Input validation
-                if (username.isEmpty()) {
-                    usernameEditText.setError("Username is required");
-                    usernameEditText.requestFocus();
-                    return;
-                }
-                if (email.isEmpty()) {
+
+                if (TextUtils.isEmpty(email)) {
                     emailEditText.setError("Email is required");
                     emailEditText.requestFocus();
                     return;
@@ -81,61 +96,37 @@ public class SignUpActivity extends AppCompatActivity {
                     passwordEditText.requestFocus();
                     return;
                 }
-                if (!password.equals(rePassword)) {
-                    rePasswordEditText.setError("Passwords do not match");
-                    rePasswordEditText.requestFocus();
-                    return;
-                }
-
-                // Disable the register button and show progress bar
-                progressBar.setVisibility(View.VISIBLE);
-                registerButton.setEnabled(false);
 
                 // Firebase user registration
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
-                                progressBar.setVisibility(View.GONE);
-                                registerButton.setEnabled(true);
-
                                 if (task.isSuccessful()) {
-                                    String userId = mAuth.getCurrentUser().getUid();
-                                    // Save username to the database
-                                    databaseUsers.child(userId).setValue(new User(username, email))
-                                            .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                                @Override
-                                                public void onComplete(@NonNull Task<Void> task) {
-                                                    if (task.isSuccessful()) {
-                                                        Toast.makeText(SignUpActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
-                                                        // Navigate to login screen
-                                                        Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
-                                                        startActivity(intent);
-                                                        finish();
-                                                    } else {
-                                                        Toast.makeText(SignUpActivity.this, "Failed to save user details", Toast.LENGTH_SHORT).show();
+                                    FirebaseUser user = mAuth.getCurrentUser();
+                                    if (user != null) {
+                                        user.sendEmailVerification()
+                                                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                    @Override
+                                                    public void onComplete(@NonNull Task<Void> task) {
+                                                        if (task.isSuccessful()) {
+                                                            Toast.makeText(SignUpActivity.this,
+                                                                    "Verification email sent. Please check your inbox.",
+                                                                    Toast.LENGTH_LONG).show();
+                                                            mAuth.signOut(); // Log out the user after registration
+                                                            startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
+                                                            finish();
+                                                        } else {
+                                                            Toast.makeText(SignUpActivity.this,
+                                                                    "Failed to send verification email.",
+                                                                    Toast.LENGTH_SHORT).show();
+                                                        }
                                                     }
-                                                }
-                                            });
+                                                });
+                                    }
                                 } else {
-                                    Toast.makeText(SignUpActivity.this, "Registration failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(SignUpActivity.this, "Authentication failed", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
-            }
-        });
-    }
-
-    // User model class
-    public static class User {
-        public String username, email;
-
-        public User() {
-        }
-
-        public User(String username, String email) {
-            this.username = username;
-            this.email = email;
-        }
-    }
-}
+            }});}}

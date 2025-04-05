@@ -16,6 +16,16 @@
     <color name="Happy">#DA983C</color>">
     <color name="Lovely">#EB7096</color>">
     <color name="Mad">#990F02</color>
+    <color name="primary_color">#6200EE</color>
+    <color name="primary_dark">#3700B3</color>
+    <color name="primary_light">#BB86FC</color>
+    <color name="background_gray">#F5F5F5</color>
+    <color name="yellow">#FFFFD700</color>
+    <color name="red">#FFFF0000</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="green">#FF00FF00</color>
+    <color name="pink">#FFFF69B4</color>
+    <color name="colorPrimary">#6200EE</color> <!-- Example primary color -->
 
 
 </resources>

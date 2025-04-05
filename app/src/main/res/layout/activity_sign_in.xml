@@ -9,17 +9,17 @@
     android:background="@drawable/sign1"
     tools:context="com.example.feelsync.LoginActivity">
 
+
     <TextView
         android:id="@+id/signuptitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="70dp"
+        android:layout_marginTop="150dp"
         android:gravity="center"
         android:text="Sign in"
         android:textColor="#635147"
         android:textSize="35dp"
-        android:textStyle="italic" />
-
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/email"
@@ -51,7 +51,8 @@
         android:textColor="#796c63"
         android:textColorHint="#796c63"
         android:textSize="20dp"
-        android:textStyle="italic" />
+        android:textStyle="italic"
+        android:inputType="textPassword"/>
 
 
     <com.google.android.material.button.MaterialButton
@@ -72,6 +73,20 @@
         android:layout_gravity="center"
         android:layout_marginTop="-385dp"
         android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/signinnow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signinbtn"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="click to sign up"
+        android:textColor="#635147"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
 
 
 

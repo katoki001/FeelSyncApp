@@ -12,7 +12,7 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="150dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:gravity="center"
@@ -56,18 +56,5 @@
         android:text="Log out"
         android:textColor="#ffffff"
         android:textSize="20dp" />
-
-    <Button
-        android:id="@+id/Open"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/logOutbtn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#796c63"
-        android:text="Open"
-        android:textColor="#ffffff"
-        android:textSize="20dp" />
-
 
 </RelativeLayout>

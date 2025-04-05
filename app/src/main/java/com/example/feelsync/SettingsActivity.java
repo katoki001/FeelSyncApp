@@ -3,22 +3,27 @@ package com.example.feelsync;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.SwitchCompat;
+
 import com.example.proglish2.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class SettingsActivity extends AppCompatActivity {
-
-    private ImageView nightMode, notification, privateAccount, chooseColorArrow;
+    private ImageView nightMode, notificationarrow, privateAccount, chooseColorArrow;
     private SwitchCompat nightModeSwitch, notificationSwitch, privateAccountSwitch;
     private AppCompatButton editProfileButton;
     private TextView userName;
     private BottomNavigationView bottomNavigationView;
+
+    /*@SuppressLint({"MissingInflatedId", "WrongViewCast"})
+    private ImageView nightMode, notification, privateAccount;
+    private SwitchCompat nightModeSwitch, notificationSwitch, privateAccountSwitch;
+    private AppCompatButton editProfileButton;
+    private TextView userName;*/
 
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
@@ -28,18 +33,21 @@ public class SettingsActivity extends AppCompatActivity {
 
         // Initialize UI components
         nightMode = findViewById(R.id.night_mode);
-        notification = findViewById(R.id.notification);
-        privateAccount = findViewById(R.id.Private);
+        notificationarrow = findViewById(R.id.notificationarrow);
+        //privateAccount = findViewById(R.id.Private);
         editProfileButton = findViewById(R.id.edit_profile);
         userName = findViewById(R.id.user_name);
-        chooseColorArrow = findViewById(R.id.choose_color_arrow); // Найти стрелку
+        chooseColorArrow = findViewById(R.id.choose_color_arrow);
 
-        // Set up button click listener
         editProfileButton.setOnClickListener(v -> editProfile());
-
-        // Открытие выбора цвета при нажатии на стрелку
         chooseColorArrow.setOnClickListener(v -> {
             Intent intent = new Intent(SettingsActivity.this, ChooseColorActivity.class);
+            startActivity(intent);
+        });
+
+        editProfileButton.setOnClickListener(v -> editProfile());
+        notificationarrow.setOnClickListener(v -> {
+            Intent intent = new Intent(SettingsActivity.this, NotificationActivity.class);
             startActivity(intent);
         });
 
@@ -51,18 +59,22 @@ public class SettingsActivity extends AppCompatActivity {
                 return true;
             } else if (itemId == R.id.nav_calendar) {
                 startActivity(new Intent(getApplicationContext(), CalendarActivity.class));
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
                 finish();
                 return true;
             } else if (itemId == R.id.nav_home) {
                 startActivity(new Intent(getApplicationContext(), MainPageActivity.class));
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
                 finish();
                 return true;
             } else if (itemId == R.id.nav_ai) {
                 startActivity(new Intent(getApplicationContext(), AIChatActivity.class));
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
                 finish();
                 return true;
             } else if (itemId == R.id.nav_music) {
                 startActivity(new Intent(getApplicationContext(), MusicActivity.class));
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left);
                 finish();
                 return true;
             }
@@ -71,7 +83,6 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void editProfile() {
-        // Здесь логика редактирования профиля
     }
 }
 

@@ -1,35 +1,49 @@
 package com.example.feelsync;
 
-import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.proglish2.R;
 
 public class ViewNoteActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.view_note);
+        setContentView(R.layout.view_note); // This must be called first
 
-        TextView fullNoteTextView = findViewById(R.id.full_note_text);
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) TextView emotionTextView = findViewById(R.id.emotion_text); // Add this TextView in your layout
+        // Initialize views after setContentView
+        TextView noteText = findViewById(R.id.full_note_text);
+        TextView emotionText = findViewById(R.id.full_emotion_text);
+        TextView dateText = findViewById(R.id.full_date_text);
 
-        // Get the full note and emotion from the Intent
-        String fullNoteText = getIntent().getStringExtra("NOTE_TEXT");
-        String emotion = getIntent().getStringExtra("NOTE_EMOTION");
+        // Get data from intent
+        Intent intent = getIntent();
+        if (intent != null) {
+            String note = intent.getStringExtra("NOTE_TEXT");
+            String emotion = intent.getStringExtra("NOTE_EMOTION");
+            String date = intent.getStringExtra("NOTE_DATE");
 
-        // Set the full note text
-        if (fullNoteText != null) {
-            fullNoteTextView.setText(fullNoteText);
+            // Set text to views
+            if (note != null) noteText.setText(note);
+            if (emotion != null) {
+                emotionText.setText(emotion);
+                emotionText.setTextColor(getColorFromEmotion(emotion));
+            }
+            if (date != null) dateText.setText(date);
         }
+    }
 
-        // Set the emotion text
-        if (emotion != null) {
-            emotionTextView.setText(emotion);
+    private int getColorFromEmotion(String emotion) {
+        if (emotion == null) return getResources().getColor(R.color.black);
+
+        switch (emotion) {
+            case "Happy": return getResources().getColor(R.color.yellow);
+            case "Angry": return getResources().getColor(R.color.red);
+            case "Sad": return getResources().getColor(R.color.blue);
+            case "Calm": return getResources().getColor(R.color.green);
+            case "Lovely": return getResources().getColor(R.color.pink);
+            default: return getResources().getColor(R.color.black);
         }
     }
 }

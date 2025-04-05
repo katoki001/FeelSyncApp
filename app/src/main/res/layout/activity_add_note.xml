@@ -11,46 +11,29 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Emotion Color"
+        android:textColor="@color/black"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp" />
+        android:textStyle="bold" />
 
     <!-- Color Buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="8dp"
-        android:gravity="start">
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
 
-        <View
-            android:id="@+id/color_happy"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="8dp"
-            android:background="#DA983C" />
-
-        <View
-            android:id="@+id/color_angry"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="#990F02"
-            android:layout_marginEnd="8dp" />
-
-        <View
-            android:id="@+id/color_sad"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="#1C2E4A"
-            android:layout_marginEnd="8dp" />
-
-        <View
-            android:id="@+id/color_calm"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="#477023"
-            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:id="@+id/lovely_textView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:text="Emotion: Lovely"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
 
         <View
             android:id="@+id/color_love"
@@ -59,20 +42,122 @@
             android:background="#EB7096" />
     </LinearLayout>
 
+    <!-- Happy -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/happy_textView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:text="Emotion: Happy"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <View
+            android:id="@+id/color_happy"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#DA983C" />
+    </LinearLayout>
+
+    <!-- Calm -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/calm_textView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:text="Emotion: Calm"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <View
+            android:id="@+id/color_calm"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#477023" />
+    </LinearLayout>
+
+    <!-- Sad -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/sad_textView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:text="Emotion: Sad"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <View
+            android:id="@+id/color_sad"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#1C2E4A" />
+    </LinearLayout>
+
+    <!-- Angry -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/angry_textView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:text="Emotion: Angry"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <View
+            android:id="@+id/color_angry"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#990F02" />
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Note"
+        android:text="Your Notes"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/note_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Write your note here"
-        android:padding="12dp" />
+        android:padding="12dp"
+        android:textColorHint="@color/black"/>
 
     <!-- <TextView
         android:layout_width="wrap_content"

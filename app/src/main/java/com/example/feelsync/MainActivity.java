@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     //--------------------------------------------------------------------------------------------//
     //SIGN UP, SIGN IN, LOG OUT, OPEN//
     //--------------------------------------------------------------------------------------------//
-    private Button signUpButton, logInButton, logOutButton, openButton;
+    private Button signUpButton, logInButton, logOutButton;
     private FirebaseAuth auth;
 
     @SuppressLint("MissingInflatedId")
@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         signUpButton = findViewById(R.id.signbtn);
         logInButton = findViewById(R.id.logbtn);
         logOutButton = findViewById(R.id.logOutbtn);
-        openButton = findViewById(R.id.Open);
 
         // Set click listeners for authentication buttons
         signUpButton.setOnClickListener(v -> {
@@ -49,11 +48,6 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, LogOutActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent); // Start the LogOutActivity
-        });
-
-        openButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, MainPageActivity.class);
-            startActivity(intent); //Just opening the main page
         });
 
     }
