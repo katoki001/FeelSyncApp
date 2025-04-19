@@ -1,44 +1,70 @@
-
 package com.example.feelsync;
 
+import androidx.annotation.NonNull;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
+public class Message {
+    public enum Sender {
+        USER("me"),
+        BOT("bot");
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
+        private final String value;
 
-import com.example.proglish2.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+        Sender(String value) {
+            this.value = value;
+        }
 
-public class Message extends AppCompatActivity {
-    public static String SENT_BY_ME = "me";
-    public static String SENT_BY_BOT = "bot";
+        public String getValue() {
+            return value;
+        }
 
-    String message;
-    String sentBy;
-
-    public String getSentBy() {
-        return sentBy;
+        public static Sender fromString(String text) {
+            for (Sender sender : Sender.values()) {
+                if (sender.value.equalsIgnoreCase(text)) {
+                    return sender;
+                }
+            }
+            return BOT;
+        }
     }
 
-    public void setSentBy(String sentBy) {
-        this.sentBy = sentBy;
+    private String id;
+    private String content;
+    private Sender sender;
+    private long timestamp;
+    private boolean isRead;
+
+    public Message(String content, Sender sender) {
+        this.content = content;
+        this.sender = sender;
+        this.timestamp = System.currentTimeMillis();
+        this.isRead = false;
+        this.id = "msg_" + timestamp + "_" + (sender == Sender.USER ? "u" : "b");
     }
 
-    public String getMessage() {
-        return message;
+    public String getId() { return id; }
+    public String getContent() { return content; }
+    public Sender getSender() { return sender; }
+    public long getTimestamp() { return timestamp; }
+    public boolean isRead() { return isRead; }
+    public boolean isSentByUser() { return sender == Sender.USER; }
+    public void markAsRead() { isRead = true; }
+
+    public String getFormattedTime() {
+        return new SimpleDateFormat("h:mm a", Locale.getDefault()).format(new Date(timestamp));
     }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public Message(String message, String sentBy) {
-        this.message = message;
-        this.sentBy = sentBy;
+    @NonNull
+    @Override
+    public String toString() {
+        return "Message{" +
+                "id='" + id + '\'' +
+                ", content='" + content + '\'' +
+                ", sender=" + sender +
+                ", timestamp=" + timestamp +
+                ", isRead=" + isRead +
+                '}';
     }
 }

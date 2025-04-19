@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
-
     <item
         android:id="@+id/nav_ai"
-<<<<<<< HEAD
         android:title="AI"
         android:icon="@drawable/aibtn"/>
 
@@ -13,19 +10,8 @@
         android:title="Calendar"
         android:icon="@drawable/calendar"/>
 
-=======
-        android:title="AI"/>
-    <!--android:icon="@drawable/aibtn"-->
-    <item
-        android:id="@+id/nav_calendar"
-        android:title="Calendar" />
-    <!--android:icon="@drawable/calendar1btn"-->
->>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7
-
-
     <item
         android:id="@+id/nav_home"
-<<<<<<< HEAD
         android:title="Home"
         android:icon="@drawable/home"/>
 
@@ -34,27 +20,8 @@
         android:title="Music"
         android:icon="@drawable/music"/>
 
-=======
-        android:title="Home" />
-    <!--android:icon="@drawable/home"-->
-
     <item
-        android:id="@+id/nav_music"
-        android:title="Music"/>
-        <!--android:icon="@drawable/music"-->
->>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7
-
-
-    <item
-        android:id="@+id/nav_settings"
-<<<<<<< HEAD
-        android:title="Settings"
-        android:icon="@drawable/settings"/>
+        android:id="@+id/nav_statitstics"
+        android:title="Statistics"
+        android:icon="@drawable/chart"/>
 </menu>
-=======
-        android:title="Settings" />
-</menu>
-    <!--android:icon="@drawable/settings"-->
-
-
->>>>>>> 9766a59b2d9fb662435d4dc211e328896a6f58a7

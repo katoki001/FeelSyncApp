@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         // Initialize buttons for authentication actions
         signUpButton = findViewById(R.id.signbtn);
         logInButton = findViewById(R.id.logbtn);
-        logOutButton = findViewById(R.id.logOutbtn);
+        //logOutButton = findViewById(R.id.logOutbtn);
 
         // Set click listeners for authentication buttons
         signUpButton.setOnClickListener(v -> {
@@ -43,12 +43,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent); // Start the LoginActivity
         });
 
-        logOutButton.setOnClickListener(v -> {
+        /*logOutButton.setOnClickListener(v -> {
             auth.signOut();
             Intent intent = new Intent(MainActivity.this, LogOutActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent); // Start the LogOutActivity
-        });
+        });*/
 
     }
 }
