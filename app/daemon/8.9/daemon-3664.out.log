@@ -1,0 +1,1149 @@
+2025-01-02T13:16:44.598+0400 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [--add-opens=java.base/java.util=ALL-UNNAMED, --add-opens=java.base/java.lang=ALL-UNNAMED, --add-opens=java.base/java.lang.invoke=ALL-UNNAMED, --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED, --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED, --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED, --add-opens=java.base/java.nio.charset=ALL-UNNAMED, --add-opens=java.base/java.net=ALL-UNNAMED, --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED, -Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant]
+2025-01-02T13:16:45.071+0400 [DEBUG] [org.gradle.internal.nativeintegration.services.NativeServices] Native-platform posix files integration is not available. Continuing with fallback.
+2025-01-02T13:16:45.170+0400 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=8caa2447-2721-4039-b494-135aa8f11428,javaHome=C:\Users\melko\AppData\Local\Programs\Android Studio\jbr,javaVersion=21,daemonRegistryDir=C:\AniApp\FeelSync\app\daemon,pid=3664,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED,--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2025-01-02T13:16:45.357+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #12-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.357+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.358+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #8-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.358+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.359+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #12-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.360+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.360+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #8-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.361+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.362+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #12-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.362+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.363+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #8-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.364+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.364+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #13-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.365+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.366+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #13-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.366+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.366+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #13-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.367+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.367+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #9-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.367+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.368+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #16-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.368+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.369+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #9-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.369+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.369+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #16-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.370+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.370+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #9-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.371+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.372+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #16-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.373+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.374+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #17-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.375+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.375+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #17-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.376+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.376+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #15-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.377+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.378+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #17-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.379+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.379+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #15-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.380+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.381+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #15-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.381+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.382+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #18-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.383+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.383+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #18-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.384+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.384+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #21-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.385+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.386+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #20-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.386+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.387+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #21-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.388+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.388+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #18-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.389+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.390+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #20-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.390+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.391+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #21-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.391+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.391+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #20-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.392+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.392+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #19-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.393+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.394+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #22-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.394+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.394+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #7-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.395+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.395+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #19-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.395+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.396+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #22-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.396+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.396+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #7-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.397+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.397+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #19-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.397+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.398+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #7-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.398+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.398+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #22-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.399+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.399+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #23-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.399+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.400+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #23-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.400+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.400+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #23-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.401+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.401+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #27-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.403+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.404+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #27-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.405+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.405+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #27-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.406+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.406+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #25-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.406+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.406+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #25-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.407+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.407+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #25-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.407+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.408+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #26-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.408+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.408+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #26-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.408+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.409+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #26-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.409+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.409+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #6-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.409+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.410+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #6-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.410+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.410+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #6-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.410+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.411+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #29-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.411+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.411+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #24-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.412+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.412+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #29-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.412+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.413+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #24-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.413+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.413+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #29-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.413+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.414+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #24-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.414+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.414+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #3-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.415+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.415+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #3-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.415+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.415+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #3-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.416+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.416+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #31-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.416+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.417+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #35-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.417+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.417+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #31-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.418+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.418+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #35-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.418+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.419+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #31-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.419+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.419+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #35-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.419+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.420+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #32-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.420+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.420+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #33-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.420+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.421+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #33-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.421+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.421+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #32-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.422+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.422+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #33-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.423+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.423+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #32-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.424+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.424+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #34-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.424+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.425+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #39-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.425+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.425+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #34-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.425+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.425+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #39-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.426+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.426+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #39-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.426+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.426+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #34-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.427+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.427+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #36-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.427+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.427+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #36-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.428+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.428+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #36-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.428+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.428+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #37-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.428+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.429+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #37-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.429+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.429+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #37-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.429+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.430+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #40-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.430+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.430+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #40-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.430+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.430+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #40-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.431+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.431+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #42-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.431+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.432+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #42-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.432+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.432+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #42-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.432+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.433+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #44-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.434+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.434+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #38-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.434+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.435+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #38-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.435+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.435+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #44-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.435+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.435+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #38-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.436+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.436+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #44-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.436+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.436+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #5-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.437+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.437+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #5-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.437+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.437+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #5-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.438+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.438+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #4-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.439+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.439+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #4-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.439+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.439+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #45-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.440+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.440+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #4-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.440+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.440+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #45-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.441+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.441+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #45-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.441+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.441+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #52-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.441+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.441+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #52-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.442+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.442+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #52-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.442+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.442+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #48-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.442+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.443+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #48-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.443+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.443+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #48-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.443+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.444+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #47-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.444+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.444+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #53-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.444+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.444+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #47-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.445+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.445+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #53-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.445+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.445+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #47-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.446+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.446+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #53-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.446+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.447+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #43-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.447+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.447+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #43-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.448+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.448+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #43-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.449+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.449+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #49-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.450+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.450+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #49-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.451+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.451+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #49-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.451+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.452+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #46-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.461+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.462+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #55-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.462+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.462+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #46-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.463+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.463+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #46-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.463+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.464+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #55-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.464+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.464+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #55-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.465+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.465+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #14-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.466+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.466+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #63-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.466+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.467+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #58-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.467+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.467+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #57-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.468+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.468+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #63-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.468+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.469+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #14-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.469+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.469+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #57-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.470+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.470+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #58-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.470+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.471+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #63-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.472+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.472+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #14-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.472+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.473+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #58-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.473+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.473+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #57-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.474+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.474+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #54-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.474+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.475+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #68-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.475+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.475+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #2-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.475+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.475+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #51-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.476+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.476+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #54-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.476+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.476+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #68-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.476+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.476+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #2-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.477+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.477+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #51-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.477+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.477+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #54-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.478+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.478+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #68-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.479+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.479+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #2-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.479+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.480+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #51-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.481+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.481+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #66-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.481+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.481+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #64-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.481+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.482+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #59-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.482+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.482+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #59-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.482+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.483+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #66-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.483+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.483+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #64-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.484+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.484+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #59-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.484+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.484+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #66-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.484+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.485+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #64-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.485+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.485+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #30-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.485+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.485+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #71-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.486+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.486+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #70-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.486+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.486+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #75-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.486+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.486+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #71-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.487+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.487+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #70-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.487+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.487+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #75-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.487+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.488+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #71-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.488+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.488+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #30-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.488+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.488+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #70-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.489+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.489+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #75-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.489+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.489+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #30-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.489+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.489+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #72-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.490+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.490+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #77-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.490+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.490+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #74-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.490+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.491+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #79-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.491+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.491+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #72-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.491+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.491+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #77-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.491+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.492+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #74-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.492+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.492+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #79-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.492+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.492+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #72-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.493+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.493+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #77-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.493+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.493+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #74-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.493+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.494+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #79-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.494+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.494+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #65-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.494+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.494+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #69-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.495+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.495+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #81-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.495+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.495+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #76-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.496+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.496+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #69-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.496+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.497+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #81-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.497+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.497+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #76-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.497+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.498+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #69-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.498+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.498+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #81-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.498+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.498+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #76-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.499+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.499+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #80-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.499+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.499+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #80-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.499+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.500+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #80-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.500+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.500+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #65-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.500+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.501+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #65-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.501+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.501+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #82-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.501+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.501+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #82-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.502+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.502+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #73-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.502+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.502+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #73-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.502+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.503+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #82-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.503+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.503+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #73-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.503+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.504+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #78-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.504+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.505+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #78-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.505+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.505+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #78-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.505+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.505+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #86-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.505+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.506+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #86-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.506+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.506+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #86-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.506+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.506+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #88-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.507+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.507+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #88-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.507+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.507+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #88-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.508+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.508+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #90-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.508+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.508+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #90-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.509+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.509+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #84-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.509+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.509+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #90-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.509+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.510+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #84-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.510+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.510+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #84-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.510+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.510+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #62-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.510+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.510+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #62-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.511+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.511+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #62-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.511+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.512+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #83-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.512+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.512+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #61-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.512+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.512+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #83-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.513+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.513+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #83-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.513+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.513+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #61-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.513+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.513+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #61-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.514+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.514+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #87-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.514+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.514+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #87-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.514+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.514+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #87-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.515+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.515+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #93-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.515+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.515+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #93-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.515+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.515+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #93-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.515+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.516+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #97-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.516+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.516+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #97-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.516+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.516+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #97-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.516+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.517+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #89-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.517+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.517+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #89-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.517+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.518+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #89-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.518+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.518+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #91-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.518+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.518+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #91-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.519+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.519+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #91-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.519+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.519+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #94-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.519+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.519+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #94-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.520+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.520+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #94-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.520+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.520+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #56-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.520+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.520+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #56-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.520+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.521+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #56-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.522+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.522+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #92-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.522+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.522+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #92-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.523+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.523+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #92-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.523+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.523+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #95-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.523+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.524+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #95-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.524+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.524+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #95-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.524+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.524+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #96-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.525+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.525+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #96-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.525+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.525+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #41-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.525+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.525+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #41-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.525+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.526+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #96-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.526+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.526+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #41-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.526+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.526+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.526+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.527+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.527+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.527+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.528+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.528+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #50-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.528+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.528+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #85-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.528+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.528+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #67-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.529+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.529+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #50-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.529+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.529+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #85-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.530+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.530+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #67-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.530+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.530+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #50-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.530+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.530+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #85-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.531+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.531+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #67-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.531+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.531+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #60-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.531+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.531+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #60-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.532+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.532+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #60-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.532+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.532+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #10-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.532+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.532+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #11-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.533+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.533+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #28-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.533+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.533+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #10-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.534+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.534+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #28-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.534+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.535+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #11-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.535+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.535+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #10-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.535+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.536+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #28-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.536+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.536+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #11-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.536+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.536+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe FE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.536+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.537+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe FE Family Controller-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.537+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.537+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe FE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.538+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.538+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.538+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.538+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.539+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.539+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.539+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.539+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.539+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.539+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.540+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.540+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.540+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.540+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek PCIe FE Family Controller
+2025-01-02T13:16:45.541+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.541+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:9d6c:4e20:63d:ea44%ethernet_32768
+2025-01-02T13:16:45.542+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Kernel Debug Network Adapter
+2025-01-02T13:16:45.542+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.542+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Bluetooth Device (Personal Area Network)
+2025-01-02T13:16:45.543+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.543+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)
+2025-01-02T13:16:45.544+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.544+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)
+2025-01-02T13:16:45.544+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.544+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)
+2025-01-02T13:16:45.544+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.544+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel
+2025-01-02T13:16:45.545+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.545+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:74f1:588d:741d:2a11%ethernet_32774
+2025-01-02T13:16:45.545+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #2
+2025-01-02T13:16:45.545+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.545+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:7a7a:892c:529e:d891%ethernet_32775
+2025-01-02T13:16:45.545+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #3
+2025-01-02T13:16:45.546+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.546+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:6af2:dca2:75d:8be5%ethernet_32776
+2025-01-02T13:16:45.546+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #4
+2025-01-02T13:16:45.546+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.546+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:17bb:26a4:7021:9390%ethernet_32777
+2025-01-02T13:16:45.547+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #5
+2025-01-02T13:16:45.547+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.547+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:7ff2:a84b:9f82:f220%ethernet_32778
+2025-01-02T13:16:45.547+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #6
+2025-01-02T13:16:45.548+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.548+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:8ef4:405b:2778:391c%ethernet_32779
+2025-01-02T13:16:45.548+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #7
+2025-01-02T13:16:45.548+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.549+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:2b4f:d669:5176:6b06%ethernet_32780
+2025-01-02T13:16:45.549+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #8
+2025-01-02T13:16:45.549+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.549+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:2ce:46e9:f541:a842%ethernet_32781
+2025-01-02T13:16:45.549+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #9
+2025-01-02T13:16:45.550+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.550+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:bba7:f518:dc8d:e399%ethernet_32782
+2025-01-02T13:16:45.550+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #10
+2025-01-02T13:16:45.550+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.550+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:87f7:a346:ba76:3e10%ethernet_32783
+2025-01-02T13:16:45.551+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #11
+2025-01-02T13:16:45.551+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.551+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:edcb:98f4:975c:332%ethernet_32784
+2025-01-02T13:16:45.551+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #12
+2025-01-02T13:16:45.551+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.552+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:f7f:6ae1:5a1d:6b20%ethernet_32785
+2025-01-02T13:16:45.552+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #13
+2025-01-02T13:16:45.552+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.552+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:eb96:3931:14dd:a45f%ethernet_32786
+2025-01-02T13:16:45.552+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #14
+2025-01-02T13:16:45.553+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.553+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:8399:d911:2ef4:4bdb%ethernet_32787
+2025-01-02T13:16:45.553+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #15
+2025-01-02T13:16:45.554+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.554+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:df92:a185:d5d4:37c2%ethernet_32788
+2025-01-02T13:16:45.554+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #16
+2025-01-02T13:16:45.555+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.555+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:f110:68c4:5a9a:d295%ethernet_32789
+2025-01-02T13:16:45.555+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #17
+2025-01-02T13:16:45.555+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.555+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:4c8e:289d:3576:f402%ethernet_32790
+2025-01-02T13:16:45.555+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #18
+2025-01-02T13:16:45.556+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.556+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:a476:1853:c6f8:1dc%ethernet_32791
+2025-01-02T13:16:45.556+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #19
+2025-01-02T13:16:45.556+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.557+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:8c50:cc24:45e0:739a%ethernet_32792
+2025-01-02T13:16:45.557+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #20
+2025-01-02T13:16:45.557+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.557+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:836b:31a1:7f2d:bb30%ethernet_32793
+2025-01-02T13:16:45.557+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #21
+2025-01-02T13:16:45.557+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.557+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:b3ea:7e5b:ce54:d644%ethernet_32794
+2025-01-02T13:16:45.558+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #22
+2025-01-02T13:16:45.558+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.559+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:4e1c:a151:64dc:6d7a%ethernet_32795
+2025-01-02T13:16:45.559+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #23
+2025-01-02T13:16:45.559+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.559+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:20a8:2745:7fc1:9c7c%ethernet_32796
+2025-01-02T13:16:45.559+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #24
+2025-01-02T13:16:45.560+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.560+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:c5e2:9281:3d6e:7983%ethernet_32797
+2025-01-02T13:16:45.560+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #25
+2025-01-02T13:16:45.560+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.561+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:8608:f8aa:8404:794d%ethernet_32798
+2025-01-02T13:16:45.561+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #26
+2025-01-02T13:16:45.561+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.561+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:f2f:4626:5a42:afd3%ethernet_32799
+2025-01-02T13:16:45.562+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #27
+2025-01-02T13:16:45.562+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.562+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:8f5c:deba:3d0c:ed99%ethernet_32800
+2025-01-02T13:16:45.563+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #28
+2025-01-02T13:16:45.563+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.563+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:918c:3554:e322:c9f%ethernet_32801
+2025-01-02T13:16:45.563+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #29
+2025-01-02T13:16:45.564+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.564+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:3722:e744:bb56:2d23%ethernet_32802
+2025-01-02T13:16:45.564+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #30
+2025-01-02T13:16:45.564+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.564+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:1177:605b:d76d:ff6%ethernet_32803
+2025-01-02T13:16:45.565+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #31
+2025-01-02T13:16:45.565+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.565+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:b3d8:dc65:c180:5715%ethernet_32804
+2025-01-02T13:16:45.566+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #32
+2025-01-02T13:16:45.566+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.566+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:6008:f314:45b7:92a7%ethernet_32805
+2025-01-02T13:16:45.566+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #33
+2025-01-02T13:16:45.566+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.567+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:38ac:b42a:9d1:ab88%ethernet_32806
+2025-01-02T13:16:45.567+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #34
+2025-01-02T13:16:45.567+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.567+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:9111:7b73:d24d:1787%ethernet_32807
+2025-01-02T13:16:45.567+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #35
+2025-01-02T13:16:45.567+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.568+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:c91:32e2:3f3b:683%ethernet_32808
+2025-01-02T13:16:45.568+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #36
+2025-01-02T13:16:45.568+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.568+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:ed43:a136:6d0b:cc65%ethernet_32809
+2025-01-02T13:16:45.568+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #37
+2025-01-02T13:16:45.569+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.569+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:5602:b73c:3aba:1e96%ethernet_32810
+2025-01-02T13:16:45.569+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #38
+2025-01-02T13:16:45.569+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.569+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:22ed:a8b9:a2df:2b97%ethernet_32811
+2025-01-02T13:16:45.569+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #39
+2025-01-02T13:16:45.570+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.570+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:5a36:f7df:6b7c:98b6%ethernet_32812
+2025-01-02T13:16:45.570+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #40
+2025-01-02T13:16:45.570+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.571+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:328d:aa78:19ac:5e75%ethernet_32813
+2025-01-02T13:16:45.571+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #41
+2025-01-02T13:16:45.572+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.572+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:19e7:5124:5b0:92a2%ethernet_32814
+2025-01-02T13:16:45.572+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #42
+2025-01-02T13:16:45.572+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.572+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:ac2c:481:9e43:cd9%ethernet_32815
+2025-01-02T13:16:45.573+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #43
+2025-01-02T13:16:45.573+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.574+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:d71f:325:c203:7f5e%ethernet_32816
+2025-01-02T13:16:45.574+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #44
+2025-01-02T13:16:45.574+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.574+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:e085:5b08:90d4:3884%ethernet_32817
+2025-01-02T13:16:45.575+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #45
+2025-01-02T13:16:45.575+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.575+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:16e8:d164:785d:e114%ethernet_32818
+2025-01-02T13:16:45.575+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #46
+2025-01-02T13:16:45.576+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.576+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:b76a:5d2c:4546:6134%ethernet_32819
+2025-01-02T13:16:45.576+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #47
+2025-01-02T13:16:45.577+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.577+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:59f2:8565:d728:8f50%ethernet_32820
+2025-01-02T13:16:45.577+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #48
+2025-01-02T13:16:45.577+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.578+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:a96:221:916c:a388%ethernet_32821
+2025-01-02T13:16:45.578+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #49
+2025-01-02T13:16:45.578+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.578+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:3ff8:6ecb:b263:51df%ethernet_32822
+2025-01-02T13:16:45.579+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #50
+2025-01-02T13:16:45.579+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.579+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:85df:cbc:4776:a9a%ethernet_32823
+2025-01-02T13:16:45.579+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #51
+2025-01-02T13:16:45.580+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.580+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:56fe:4fce:31b:dff2%ethernet_32824
+2025-01-02T13:16:45.580+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #52
+2025-01-02T13:16:45.581+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.581+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:be15:9cbb:ff34:6755%ethernet_32825
+2025-01-02T13:16:45.582+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #53
+2025-01-02T13:16:45.582+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.582+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:7cc3:9e6d:48f6:fadb%ethernet_32826
+2025-01-02T13:16:45.582+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #54
+2025-01-02T13:16:45.583+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.583+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:c8ab:f869:b5d:ebac%ethernet_32827
+2025-01-02T13:16:45.583+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #55
+2025-01-02T13:16:45.584+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.584+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:51dd:37bd:98f9:3002%ethernet_32828
+2025-01-02T13:16:45.584+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #56
+2025-01-02T13:16:45.585+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.585+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:eb8b:df7c:10cc:3431%ethernet_32829
+2025-01-02T13:16:45.585+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #57
+2025-01-02T13:16:45.586+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.586+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:600:5d4a:bec2:4a56%ethernet_32830
+2025-01-02T13:16:45.586+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #58
+2025-01-02T13:16:45.587+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.587+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:9134:74a0:c11:4032%ethernet_32831
+2025-01-02T13:16:45.588+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #59
+2025-01-02T13:16:45.588+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.588+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:961d:8924:227b:8e8c%ethernet_32832
+2025-01-02T13:16:45.589+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #60
+2025-01-02T13:16:45.589+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.589+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:4e7f:c0a0:e74e:e04c%ethernet_32833
+2025-01-02T13:16:45.590+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #61
+2025-01-02T13:16:45.590+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.590+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:24c8:34ab:f921:550f%ethernet_32834
+2025-01-02T13:16:45.591+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #62
+2025-01-02T13:16:45.591+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.591+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:daad:9c25:9700:d2c7%ethernet_32835
+2025-01-02T13:16:45.591+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #63
+2025-01-02T13:16:45.592+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.592+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:5b2d:a34c:b66:c185%ethernet_32836
+2025-01-02T13:16:45.592+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #64
+2025-01-02T13:16:45.593+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.593+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:aafc:bc9c:e603:e80f%ethernet_32837
+2025-01-02T13:16:45.593+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #65
+2025-01-02T13:16:45.594+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.594+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:4dd1:3f37:41cd:f518%ethernet_32838
+2025-01-02T13:16:45.594+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #66
+2025-01-02T13:16:45.595+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.595+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:a094:fbc6:6b43:a442%ethernet_32839
+2025-01-02T13:16:45.595+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #67
+2025-01-02T13:16:45.596+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.596+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:c29a:a436:daa3:d4ef%ethernet_32840
+2025-01-02T13:16:45.596+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #68
+2025-01-02T13:16:45.596+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.597+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:ff16:a5e7:5261:dc88%ethernet_32841
+2025-01-02T13:16:45.597+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #69
+2025-01-02T13:16:45.597+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.597+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:6ad8:96ce:11cd:d1f%ethernet_32842
+2025-01-02T13:16:45.597+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #70
+2025-01-02T13:16:45.598+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.598+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:3e21:bd17:dd0e:15a9%ethernet_32843
+2025-01-02T13:16:45.598+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #71
+2025-01-02T13:16:45.599+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.599+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:c72d:8c92:6c92:3d94%ethernet_32844
+2025-01-02T13:16:45.599+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #72
+2025-01-02T13:16:45.599+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.599+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:4987:2d6d:ca85:db33%ethernet_32845
+2025-01-02T13:16:45.600+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #73
+2025-01-02T13:16:45.600+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.600+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:e398:2df6:72ad:735e%ethernet_32846
+2025-01-02T13:16:45.600+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #74
+2025-01-02T13:16:45.600+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.600+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:170f:da0c:504b:7092%ethernet_32847
+2025-01-02T13:16:45.601+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #75
+2025-01-02T13:16:45.601+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.601+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:f12c:1982:791f:7ffd%ethernet_32848
+2025-01-02T13:16:45.601+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #76
+2025-01-02T13:16:45.601+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.601+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:1ed3:a2a8:8421:59e3%ethernet_32849
+2025-01-02T13:16:45.602+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #77
+2025-01-02T13:16:45.602+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.603+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:2966:23d2:408c:10fe%ethernet_32850
+2025-01-02T13:16:45.603+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #78
+2025-01-02T13:16:45.603+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.604+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:7282:76ce:52:c66%ethernet_32851
+2025-01-02T13:16:45.604+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #79
+2025-01-02T13:16:45.604+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.605+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:d077:4cb4:92c:d21d%ethernet_32852
+2025-01-02T13:16:45.605+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #80
+2025-01-02T13:16:45.606+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.606+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:a846:d104:bfd5:4375%ethernet_32853
+2025-01-02T13:16:45.607+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #81
+2025-01-02T13:16:45.607+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.607+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:55f1:5213:67db:5534%ethernet_32854
+2025-01-02T13:16:45.608+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #82
+2025-01-02T13:16:45.608+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.609+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:1afa:8e90:740d:bc8f%ethernet_32855
+2025-01-02T13:16:45.609+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #83
+2025-01-02T13:16:45.609+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.610+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:f52:8410:f0ea:e231%ethernet_32856
+2025-01-02T13:16:45.610+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #84
+2025-01-02T13:16:45.610+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.610+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:bcc9:7441:b465:b9ca%ethernet_32857
+2025-01-02T13:16:45.611+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #85
+2025-01-02T13:16:45.611+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.611+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:a12f:3f34:ba15:ce5e%ethernet_32858
+2025-01-02T13:16:45.611+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #86
+2025-01-02T13:16:45.612+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.612+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:24e2:10a8:b0f9:cf2d%ethernet_32859
+2025-01-02T13:16:45.613+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #87
+2025-01-02T13:16:45.613+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.613+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:996:5ca4:f35f:9159%ethernet_32860
+2025-01-02T13:16:45.614+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #88
+2025-01-02T13:16:45.614+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.614+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:b742:33f:870c:f9f0%ethernet_32861
+2025-01-02T13:16:45.615+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #89
+2025-01-02T13:16:45.615+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.615+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:f716:91f6:ef27:fe7a%ethernet_32862
+2025-01-02T13:16:45.615+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #90
+2025-01-02T13:16:45.615+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.616+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:f7d:b2ca:3e63:ebb1%ethernet_32863
+2025-01-02T13:16:45.616+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #91
+2025-01-02T13:16:45.616+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.617+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:e09c:609:37d6:e25f%ethernet_32864
+2025-01-02T13:16:45.617+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #92
+2025-01-02T13:16:45.617+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.617+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:ecf2:37d5:43d3:bc33%ethernet_32865
+2025-01-02T13:16:45.617+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #93
+2025-01-02T13:16:45.618+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.618+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:e856:e67d:385f:ddcd%ethernet_32866
+2025-01-02T13:16:45.618+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #94
+2025-01-02T13:16:45.619+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.619+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:d50d:a99:5d23:1cc4%ethernet_32867
+2025-01-02T13:16:45.619+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #95
+2025-01-02T13:16:45.619+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.620+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:aa36:51bc:deac:5375%ethernet_32868
+2025-01-02T13:16:45.620+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #96
+2025-01-02T13:16:45.621+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.621+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:dea8:7a4f:6f98:4cdb%ethernet_32869
+2025-01-02T13:16:45.622+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface TAP Adapter V9 for Private Tunnel #97
+2025-01-02T13:16:45.622+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.622+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:a922:93e0:3d3f:a1d0%ethernet_32870
+2025-01-02T13:16:45.622+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPPOE)
+2025-01-02T13:16:45.623+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.623+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface RAS Async Adapter
+2025-01-02T13:16:45.623+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.624+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Software Loopback Interface 1
+2025-01-02T13:16:45.624+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2025-01-02T13:16:45.624+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1
+2025-01-02T13:16:45.625+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2025-01-02T13:16:45.625+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Qualcomm Atheros AR956x Wireless Network Adapter-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.625+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.625+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Qualcomm Atheros AR956x Wireless Network Adapter-Virtual WiFi Filter Driver-0000
+2025-01-02T13:16:45.626+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.626+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Qualcomm Atheros AR956x Wireless Network Adapter-Native WiFi Filter Driver-0000
+2025-01-02T13:16:45.626+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.626+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Qualcomm Atheros AR956x Wireless Network Adapter-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.627+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.627+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Qualcomm Atheros AR956x Wireless Network Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.627+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.627+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.628+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.628+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000
+2025-01-02T13:16:45.628+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.628+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.629+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.629+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.629+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.629+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP Native MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.629+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.630+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-Native WiFi Filter Driver-0000
+2025-01-02T13:16:45.630+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.630+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-QoS Packet Scheduler-0000
+2025-01-02T13:16:45.630+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.630+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000
+2025-01-02T13:16:45.631+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.631+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Qualcomm Atheros AR956x Wireless Network Adapter
+2025-01-02T13:16:45.631+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.631+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:fb0d:5378:f678:8b16%wireless_32768
+2025-01-02T13:16:45.632+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.0.105
+2025-01-02T13:16:45.632+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter
+2025-01-02T13:16:45.632+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.632+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:f9c:869a:62d1:5891%wireless_32769
+2025-01-02T13:16:45.632+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2
+2025-01-02T13:16:45.633+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.633+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:9330:8df8:cabc:fbd7%wireless_32770
+2025-01-02T13:16:45.633+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Teredo Tunneling Adapter
+2025-01-02T13:16:45.634+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.634+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft IP-HTTPS Platform Adapter
+2025-01-02T13:16:45.634+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.634+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft 6to4 Adapter
+2025-01-02T13:16:45.634+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.635+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (SSTP)
+2025-01-02T13:16:45.635+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.635+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IKEv2)
+2025-01-02T13:16:45.635+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.635+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (L2TP)
+2025-01-02T13:16:45.636+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.636+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPTP)
+2025-01-02T13:16:45.637+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-01-02T13:16:45.648+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [d6744ba5-f416-4fa5-907c-5568be296843 port:59244, addresses:[localhost/127.0.0.1]].
+2025-01-02T13:16:45.695+0400 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Thu Jan 02 13:16:45 AMT 2025, with address: [d6744ba5-f416-4fa5-907c-5568be296843 port:59244, addresses:[localhost/127.0.0.1]]
+2025-01-02T13:16:45.696+0400 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [d6744ba5-f416-4fa5-907c-5568be296843 port:59244, addresses:[localhost/127.0.0.1]]
+2025-01-02T13:16:45.696+0400 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=8caa2447-2721-4039-b494-135aa8f11428,javaHome=C:\Users\melko\AppData\Local\Programs\Android Studio\jbr,javaVersion=21,daemonRegistryDir=C:\AniApp\FeelSync\app\daemon,pid=3664,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED,--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2025-01-02T13:16:45.697+0400 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [d6744ba5-f416-4fa5-907c-5568be296843 port:59244, addresses:[localhost/127.0.0.1]], context: DefaultDaemonContext[uid=8caa2447-2721-4039-b494-135aa8f11428,javaHome=C:\Users\melko\AppData\Local\Programs\Android Studio\jbr,javaVersion=21,daemonRegistryDir=C:\AniApp\FeelSync\app\daemon,pid=3664,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED,--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2025-01-02T13:16:45.762+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-01-02T13:16:45.773+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:16:45.788+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:16:45.791+0400 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+2025-01-02T13:16:45.796+0400 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+2025-01-02T13:16:45.822+0400 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+2025-01-02T13:16:45.825+0400 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+2025-01-02T13:16:45.826+0400 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-01-02T13:16:45.853+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:59245 to /127.0.0.1:59244.
+2025-01-02T13:16:46.105+0400 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 30: received class org.gradle.launcher.daemon.protocol.Build
+2025-01-02T13:16:46.105+0400 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 30: Received non-IO message from client: Build{id=e823510d-16e7-4b56-9369-5ec4e733c462, currentDir=C:\AniApp\FeelSync}
+2025-01-02T13:16:46.106+0400 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=e823510d-16e7-4b56-9369-5ec4e733c462, currentDir=C:\AniApp\FeelSync}.
+2025-01-02T13:16:46.106+0400 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=e823510d-16e7-4b56-9369-5ec4e733c462, currentDir=C:\AniApp\FeelSync} with connection: socket connection from /127.0.0.1:59244 to /127.0.0.1:59245.
+2025-01-02T13:16:46.111+0400 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=e823510d-16e7-4b56-9369-5ec4e733c462, currentDir=C:\AniApp\FeelSync}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59244 to /127.0.0.1:59245] after 0.013433333333333334 minutes of idle
+2025-01-02T13:16:46.112+0400 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [d6744ba5-f416-4fa5-907c-5568be296843 port:59244, addresses:[localhost/127.0.0.1]]
+2025-01-02T13:16:46.112+0400 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [d6744ba5-f416-4fa5-907c-5568be296843 port:59244, addresses:[localhost/127.0.0.1]]
+2025-01-02T13:16:46.114+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-01-02T13:16:46.114+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:16:46.117+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:16:46.118+0400 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2025-01-02T13:16:46.118+0400 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-01-02T13:16:46.119+0400 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=e823510d-16e7-4b56-9369-5ec4e733c462, currentDir=C:\AniApp\FeelSync}. Dispatching build started information...
+2025-01-02T13:16:46.120+0400 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 32: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@206e69d2
+2025-01-02T13:16:46.122+0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [USERDOMAIN_ROAMINGPROFILE, LOCALAPPDATA, PROCESSOR_LEVEL, USERDOMAIN, LOGONSERVER, JAVA_HOME, SESSIONNAME, ALLUSERSPROFILE, PROCESSOR_ARCHITECTURE, PSModulePath, SystemDrive, OneDrive, APPDATA, USERNAME, ProgramFiles(x86), TOOLBOX_VERSION, CommonProgramFiles, Path, PATHEXT, DriverData, OS, COMPUTERNAME, PROCESSOR_REVISION, CommonProgramW6432, ComSpec, ProgramData, ProgramW6432, TEMP, HOMEPATH, SystemRoot, PROCESSOR_IDENTIFIER, HOMEDRIVE, USERPROFILE, TMP, CommonProgramFiles(x86), ProgramFiles, PUBLIC, windir, NUMBER_OF_PROCESSORS]
+2025-01-02T13:16:46.131+0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2025-01-02T13:16:46.131+0400 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 3664). The daemon log file: C:\AniApp\FeelSync\app\daemon\8.9\daemon-3664.out.log
+2025-01-02T13:16:46.135+0400 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 2 GiB]
+2025-01-02T13:16:46.139+0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2025-01-02T13:16:46.139+0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=8caa2447-2721-4039-b494-135aa8f11428,javaHome=C:\Users\melko\AppData\Local\Programs\Android Studio\jbr,javaVersion=21,daemonRegistryDir=C:\AniApp\FeelSync\app\daemon,pid=3664,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED,--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.9/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 2m 39s
+2025-01-02T13:19:10.615+0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2025-01-02T13:19:10.669+0400 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-01-02T13:19:10.672+0400 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=e823510d-16e7-4b56-9369-5ec4e733c462, currentDir=C:\AniApp\FeelSync}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59244 to /127.0.0.1:59245]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@4b66bc50 with state Busy
+2025-01-02T13:19:10.673+0400 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=e823510d-16e7-4b56-9369-5ec4e733c462, currentDir=C:\AniApp\FeelSync}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59244 to /127.0.0.1:59245]
+2025-01-02T13:19:10.674+0400 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2025-01-02T13:19:10.674+0400 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [d6744ba5-f416-4fa5-907c-5568be296843 port:59244, addresses:[localhost/127.0.0.1]]
+2025-01-02T13:19:10.675+0400 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [d6744ba5-f416-4fa5-907c-5568be296843 port:59244, addresses:[localhost/127.0.0.1]]
+2025-01-02T13:19:10.678+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-01-02T13:19:10.716+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:10.755+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:10.760+0400 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-01-02T13:19:10.760+0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@33463608]
+2025-01-02T13:19:10.761+0400 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 29: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@33463608]
+2025-01-02T13:19:10.770+0400 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 30: received class org.gradle.launcher.daemon.protocol.CloseInput
+2025-01-02T13:19:10.771+0400 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 30: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@7d07ae42
+2025-01-02T13:19:10.773+0400 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 30: received class org.gradle.launcher.daemon.protocol.Finished
+2025-01-02T13:19:10.774+0400 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 30: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@2f601421
+2025-01-02T13:19:10.777+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2025-01-02T13:19:10.777+0400 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 30: received null
+2025-01-02T13:19:10.778+0400 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 30: Received end-of-input from client.
+2025-01-02T13:19:10.826+0400 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=e823510d-16e7-4b56-9369-5ec4e733c462, currentDir=C:\AniApp\FeelSync}
+2025-01-02T13:19:10.827+0400 [WARN] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Timed out waiting for finished message from client socket connection from /127.0.0.1:59244 to /127.0.0.1:59245. Discarding connection.
+2025-01-02T13:19:10.829+0400 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 29: stopping connection
+2025-01-02T13:19:10.851+0400 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 29: stopping connection
+2025-01-02T13:19:10.917+0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.CleanUpVirtualFileSystemAfterBuild] Cleaning virtual file system after build finished
+2025-01-02T13:19:11.523+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 262483968 free
+2025-01-02T13:19:11.524+0400 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 399 of memory
+2025-01-02T13:19:11.524+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 0 released, 262483968 free
+2025-01-02T13:19:16.340+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 275288064 free
+2025-01-02T13:19:16.344+0400 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 399 of memory
+2025-01-02T13:19:16.344+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 0 released, 275288064 free
+2025-01-02T13:19:17.598+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:17.599+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:17.861+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:17.907+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:17.908+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:17.909+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:21.194+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 249475072 free
+2025-01-02T13:19:21.194+0400 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 399 of memory
+2025-01-02T13:19:21.194+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 0 released, 249475072 free
+2025-01-02T13:19:25.954+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:25.962+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:26.056+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:26.073+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:26.075+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:26.078+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:26.101+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:26.101+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:26.104+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:26.219+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 357011456 free
+2025-01-02T13:19:26.219+0400 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 399 of memory
+2025-01-02T13:19:26.219+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 0 released, 357011456 free
+2025-01-02T13:19:31.202+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 303648768 free
+2025-01-02T13:19:31.202+0400 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 399 of memory
+2025-01-02T13:19:31.203+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 0 released, 303648768 free
+2025-01-02T13:19:35.842+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:35.843+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:35.844+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:35.848+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:35.851+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:35.855+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:35.859+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:35.860+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:35.861+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:45.844+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:45.845+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:45.849+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:45.853+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:45.854+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:45.854+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:45.859+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:45.859+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:45.861+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:46.189+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 414351360 free
+2025-01-02T13:19:46.189+0400 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 399 of memory
+2025-01-02T13:19:46.190+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 0 released, 414351360 free
+2025-01-02T13:19:51.187+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 377827328 free
+2025-01-02T13:19:51.188+0400 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 399 of memory
+2025-01-02T13:19:51.188+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 0 released, 377827328 free
+2025-01-02T13:19:55.841+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:55.842+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:55.854+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:55.862+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:55.863+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:55.865+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:19:55.871+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:19:55.872+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:19:55.873+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:20:05.850+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:20:05.851+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:20:05.852+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:20:05.854+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:20:05.854+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:20:05.855+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:20:05.857+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:20:05.858+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:20:05.858+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:20:11.192+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 374910976 free
+2025-01-02T13:20:11.193+0400 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 399 of memory
+2025-01-02T13:20:11.193+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 0 released, 374910976 free
+2025-01-02T13:20:15.860+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:20:15.862+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:20:15.865+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:20:15.869+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:20:15.869+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:20:15.870+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:20:15.875+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-01-02T13:20:15.875+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:20:15.876+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:20:16.149+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:59270 to /127.0.0.1:59244.
+2025-01-02T13:20:16.243+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 366194688 free
+2025-01-02T13:20:16.250+0400 [DEBUG] [org.gradle.workers.internal.WorkerDaemonExpiration] Will attempt to release 399 of memory
+2025-01-02T13:20:16.250+0400 [DEBUG] [org.gradle.process.internal.health.memory.DefaultMemoryManager] 419160883 physical memory requested, 0 released, 366194688 free
+2025-01-02T13:20:16.279+0400 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:59271 to /127.0.0.1:59244.
+2025-01-02T13:20:16.915+0400 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 103: received class org.gradle.launcher.daemon.protocol.Build
+2025-01-02T13:20:16.916+0400 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 103: Received non-IO message from client: Build{id=7a156ad6-80c7-464d-bd7b-a6b2be3cb05b, currentDir=C:\AniApp\FeelSync}
+2025-01-02T13:20:16.917+0400 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=7a156ad6-80c7-464d-bd7b-a6b2be3cb05b, currentDir=C:\AniApp\FeelSync}.
+2025-01-02T13:20:16.918+0400 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=7a156ad6-80c7-464d-bd7b-a6b2be3cb05b, currentDir=C:\AniApp\FeelSync} with connection: socket connection from /127.0.0.1:59244 to /127.0.0.1:59271.
+2025-01-02T13:20:16.929+0400 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=7a156ad6-80c7-464d-bd7b-a6b2be3cb05b, currentDir=C:\AniApp\FeelSync}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:59244 to /127.0.0.1:59271] after 1.10415 minutes of idle
+2025-01-02T13:20:16.931+0400 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [d6744ba5-f416-4fa5-907c-5568be296843 port:59244, addresses:[localhost/127.0.0.1]]
+2025-01-02T13:20:16.932+0400 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [d6744ba5-f416-4fa5-907c-5568be296843 port:59244, addresses:[localhost/127.0.0.1]]
+2025-01-02T13:20:16.934+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-01-02T13:20:16.944+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-01-02T13:20:16.957+0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-01-02T13:20:16.959+0400 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2025-01-02T13:20:16.962+0400 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=7a156ad6-80c7-464d-bd7b-a6b2be3cb05b, currentDir=C:\AniApp\FeelSync}. Dispatching build started information...
+2025-01-02T13:20:16.963+0400 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2025-01-02T13:20:16.964+0400 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 105: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@f717238
+2025-01-02T13:20:16.991+0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [USERDOMAIN_ROAMINGPROFILE, LOCALAPPDATA, PROCESSOR_LEVEL, USERDOMAIN, LOGONSERVER, JAVA_HOME, SESSIONNAME, ALLUSERSPROFILE, PROCESSOR_ARCHITECTURE, PSModulePath, SystemDrive, OneDrive, APPDATA, USERNAME, ProgramFiles(x86), TOOLBOX_VERSION, CommonProgramFiles, Path, PATHEXT, DriverData, OS, COMPUTERNAME, PROCESSOR_REVISION, CommonProgramW6432, ComSpec, ProgramData, ProgramW6432, TEMP, HOMEPATH, SystemRoot, PROCESSOR_IDENTIFIER, HOMEDRIVE, USERPROFILE, TMP, CommonProgramFiles(x86), ProgramFiles, PUBLIC, windir, NUMBER_OF_PROCESSORS]
+2025-01-02T13:20:18.263+0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2025-01-02T13:20:18.270+0400 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 3664). The daemon log file: C:\AniApp\FeelSync\app\daemon\8.9\daemon-3664.out.log
+2025-01-02T13:20:18.520+0400 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 102: received class org.gradle.launcher.daemon.protocol.InvalidateVirtualFileSystemAfterChange
+2025-01-02T13:20:18.546+0400 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 102: Received non-IO message from client: InvalidateVirtualFileSystemAfterChange[id=104ed024-d284-4678-b1bc-bb34d4e17785]
+2025-01-02T13:20:18.546+0400 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: InvalidateVirtualFileSystemAfterChange[id=104ed024-d284-4678-b1bc-bb34d4e17785].
+2025-01-02T13:20:18.546+0400 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: InvalidateVirtualFileSystemAfterChange[id=104ed024-d284-4678-b1bc-bb34d4e17785] with connection: socket connection from /127.0.0.1:59244 to /127.0.0.1:59270.
+2025-01-02T13:20:18.968+0400 [INFO] [org.gradle.launcher.daemon.server.api.HandleInvalidateVirtualFileSystem] Invalidating [C:\AniApp\FeelSync\build.gradle.kts]
+2025-01-02T13:20:19.061+0400 [DEBUG] [org.gradle.internal.vfs.impl.AbstractVirtualFileSystem] Invalidating VFS paths: [C:\AniApp\FeelSync\build.gradle.kts]
+2025-01-02T13:20:19.797+0400 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 2nd build in daemon [uptime: 3 mins 33.473 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+2025-01-02T13:20:19.841+0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2025-01-02T13:20:19.841+0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=8caa2447-2721-4039-b494-135aa8f11428,javaHome=C:\Users\melko\AppData\Local\Programs\Android Studio\jbr,javaVersion=21,daemonRegistryDir=C:\AniApp\FeelSync\app\daemon,pid=3664,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED,--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.

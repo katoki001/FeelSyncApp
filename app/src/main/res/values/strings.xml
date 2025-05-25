@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">FeelSync</string>
+    <string name="settings">Settings</string>
+    <string name="set_reminder_button">Set Reminder</string>
+    <string name="delete">Delete</string>
+    <string name="no_reminders">No reminders set</string>
+
+    <!-- Music Player Strings -->
+    <string name="no_song_selected">No song selected</string>
+    <string name="unknown_artist">Unknown Artist</string>
+
+    <!-- Error Messages -->
+    <string name="permission_required_message">Permission is required to access music files</string>
+    <string name="error_loading_music">Error loading music files</string>
+    <string name="no_music_found_message">No music files found on device</string>
+    <string name="playback_error">Playback error</string>
+    <string name="error_playing_song">Error playing song</string>
+
+    <string name="service_not_bound">Service not bound</string>
+
+    <string name="tab_local">Local</string>
+
+    <string name="tab_online">Online</string>
+
+    <string name="failed_to_load_profile">Failed to load profile data</string>
+    <string name="permission_required">Permission required to access images</string>
+    <string name="image_processing_error">Failed to process image</string>
+    <string name="name_cannot_be_empty">Name cannot be empty</string>
+    <string name="update_failed">Update failed</string>
+    <string name="profile_updated_successfully">Profile updated successfully</string>
+    <string-array name="frequency_options">
+        <item>Once per day</item>
+        <item>Twice per day</item>
+        <item>Three times per day</item>
+        <item>Four times per day</item>
+        <item>Six times per day</item>
+        <item>Every 2 hours</item>
+    </string-array>
+
+    <style name="CustomCalendarStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#000000
+        </item> <!-- Set the color you want for the date numbers -->
+        <item name="android:textSize">16sp</item>  <!-- Adjust the text size if needed -->
+    </style>
+
+    <style name="CustomMonthStyle" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">#000000
+        </item> <!-- Set the color you want for the month name -->
+        <item name="android:textSize">18sp</item>  <!-- Adjust the text size if needed -->
+    </style>
+
+
+</resources>
