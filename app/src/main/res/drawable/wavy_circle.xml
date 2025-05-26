@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Wavy Circle Path -->
+    <path
+        android:pathData="
+            M256,256
+            C256,100 100,100 100,256
+            C100,412 256,412 256,256
+            C256,100 412,100 412,256
+            C412,412 256,412 256,256 Z
+        "
+        android:strokeWidth="8"
+        android:strokeColor="#FFD700"
+        android:fillColor="#6A5ACD" />
+</vector>

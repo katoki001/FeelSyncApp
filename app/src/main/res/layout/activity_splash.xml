@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/splash_background"
+    android:padding="24dp">
+
+    <!-- Container for animated letters -->
+    <LinearLayout
+        android:id="@+id/letterContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Subtitle Text -->
+    <TextView
+        android:id="@+id/subTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="app for your mood"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:alpha="0"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-light"/>
+
+</LinearLayout>

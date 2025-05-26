@@ -9,28 +9,40 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.proglish2.R;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
     //--------------------------------------------------------------------------------------------//
-    //SIGN UP, SIGN IN, LOG OUT, OPEN//
+    // SIGN UP, SIGN IN, LOG OUT, OPEN //
     //--------------------------------------------------------------------------------------------//
-    private Button signUpButton, logInButton, logOutButton;
+    private Button signUpButton, logInButton;
     private FirebaseAuth auth;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signin_signup_main);
 
         // Initialize Firebase Auth
         auth = FirebaseAuth.getInstance();
 
+        // Check if user is already logged in
+        FirebaseUser currentUser = auth.getCurrentUser();
+        if (currentUser != null) {
+            // User is signed in, go to main app (e.g., HomeActivity)
+            Intent intent = new Intent(MainActivity.this, MainPageActivity.class);
+            startActivity(intent);
+            finish(); // Close MainActivity to prevent returning back
+            return;
+        }
+
+        // Set the content view only if user is NOT logged in
+        setContentView(R.layout.activity_signin_signup_main);
+
         // Initialize buttons for authentication actions
         signUpButton = findViewById(R.id.signbtn);
         logInButton = findViewById(R.id.logbtn);
-        //logOutButton = findViewById(R.id.logOutbtn);
 
         // Set click listeners for authentication buttons
         signUpButton.setOnClickListener(v -> {
@@ -42,13 +54,5 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent); // Start the LoginActivity
         });
-
-        /*logOutButton.setOnClickListener(v -> {
-            auth.signOut();
-            Intent intent = new Intent(MainActivity.this, LogOutActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(intent); // Start the LogOutActivity
-        });*/
-
     }
 }

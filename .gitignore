@@ -15,3 +15,7 @@
 local.properties
 "caches/" 
 "caches/" 
+"caches/" 
+"daemon/**/*.out.log" 
+"caches/" 
+"daemon/**/*.out.log" 
